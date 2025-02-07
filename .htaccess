@@ -1,0 +1,10 @@
+# Set the default homepage
+DirectoryIndex index.html
+
+# Disable directory listing to prevent showing file structure
+Options -Indexes
+
+# Redirect all traffic to HTTPS (optional)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]

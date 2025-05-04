@@ -7,12 +7,30 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://iaraf.com/Aboutus.html</loc>
+    <loc>https://iaraf.com./Navber/Aboutus.html</loc>
   </url>
   <url>
-    <loc>https://iaraf.com/Privacy.html</loc>
+    <loc>https://iaraf.com./Navber/Privacy.html</loc>
   </url>
   <url>
-    <loc>https://iaraf.com/Categorie.html</loc>
+    <loc>https://iaraf.com./Navber/Categorie.html</loc>
+  </url>
+   <url>
+    <loc>https://iaraf.com./Sub-blogpost/Imam.html</loc>
+  </url>
+   <url>
+    <loc>https://iaraf.com./Sub-blogpost/Hadith2.html</loc>
+  </url>
+   <url>
+    <loc>https://iaraf.com./Sub-blogpost/Hadith.html</loc>
+  </url>
+   <url>
+    <loc>https://iaraf.com./Sub-blogpost/guest.html</loc>
+  </url>
+  <url>
+    <loc>https://iaraf.com./Sub-blogpost/MushAh.html</loc>
+  </url>
+   <url>
+    <loc>https://iaraf.com./Sub-blogpost/Forgiveness.html</loc>
   </url>
 </urlset>

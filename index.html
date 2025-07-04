@@ -54,6 +54,95 @@
         body {
             background-color: #f8f9fa;
         }
+  /* --- ATTRACTIVE NAVBAR STYLES --- */
+
+        /* Main Navbar Styling (Glassmorphism) */
+        .navbar {
+            padding: 1rem 0;
+            /* Glass effect */
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        /* Navbar style when user scrolls */
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Brand Styling */
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #333 !important;
+        }
+
+        /* Navigation Links */
+        .navbar-nav .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Animated Underline Effect on Hover */
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0.5rem;
+            right: 0.5rem;
+            height: 2px;
+            background-color: #0d6efd; /* Bootstrap primary blue */
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+
+        .navbar-nav .nav-link:hover::after,
+        .navbar-nav .nav-link.active::after {
+            transform: scaleX(1);
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #0d6efd !important;
+        }
+        
+        /* Special CTA "Subscribe" Button */
+        .btn-subscribe {
+            padding: 0.6rem 1.5rem;
+            color: #fff;
+            background-image: linear-gradient(45deg, #0d6efd 0%, #6f42c1 100%);
+            border: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+        }
+
+        .btn-subscribe:hover {
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(13, 110, 253, 0.4);
+        }
+
+        /* Making the mobile toggler icon look better */
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.7)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+
+
        /* .hero-section {
             background: var(--primary-gradient);
             color: white;
@@ -278,7 +367,7 @@
 </head>
 <body style="font-family: Sour Gummy;">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+ <!--   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
                 <img src="image/1732040398527.jpg" class="rounded" alt="" width="70" height="70">ARAF <i class="bi bi-pencil-square me-2"></i>
@@ -294,6 +383,29 @@
                     <li class="nav-item"><a class="nav-link" href="/Navber/Privacy.html"> <i class="fas fa-shield-alt me-2"></i>Privacy</a></li>
                       <li class="nav-item"><a class="nav-link" href="/Navber/Contact-Us.html">  <i class="fas fa-envelope me-2"></i>Contact Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#subscribe"> <i class="fa-solid fa-bell"></i> Subscribe</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+    <!-- Navbar (Your original structure with added classes) -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/image/1732040398527.jpg" class="rounded me-2" alt="ARAF Logo" width="50" height="50">ARAF
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span> 
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html"> <i class="fas fa-home me-1"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"> <i class="fas fa-layer-group me-1"></i>Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"> <i class="fa-regular fa-address-card me-1"></i>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Privacy.html"> <i class="fas fa-shield-alt me-1"></i>Privacy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Contact-Us.html">  <i class="fas fa-envelope me-1"></i>Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-subscribe" href="#subscribe"> <i class="fa-solid fa-bell me-1"></i> Subscribe</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -483,7 +595,7 @@
             <br>নবী সুলায়মান (আঃ) ছিলেন দাউদ (আঃ)-এর পুত্র এবং তিনি ছিলেন নবী ও বাদশাহ উভয়ই। আল্লাহ তাঁকে অসাধারণ জ্ঞান, ভাষাজ্ঞান এবং পশুপাখি, জিন ও বাতাসের উপর কর্তৃত্ব দান করেছিলেন।
 
 সূরা আন্-নামল (সূরা ২৭)-এ সুলায়মান (আঃ) ও সাবা রাণীর ঘটনার এক বিস্ময়কর চিত্র অঙ্কিত হয়েছে যা বিশ্বাস, নেতৃত্ব, কৌশল, বুদ্ধিমত্তা এবং আল্লাহর একত্ববাদের শিক্ষা দেয়।</p>
-                            <a href="/Sub-blogpost/নবী সুলায়মান (আঃ).html" class="btn btn-outline-primary">আরও পড়ুন</a>
+                            <a href="/Sub-blogpost/SolimunAh.html" class="btn btn-outline-primary">আরও পড়ুন</a>
                     </div>
       
     </div>

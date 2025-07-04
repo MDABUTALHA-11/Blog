@@ -1,256 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <!-- Google Meta Data -->
-    <meta name="google-adsense-account" content="ca-pub-9116809033361281">
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>চাঁদের ২৮টি মনজিল</title>
+    <meta name="google-adsense-account" content="ca-pub-9116809033361281">
+    <title>চাঁদের ২৮টি মনজিল – কুরআন ও বিজ্ঞানের আলোকে এক মহাজাগতিক বিস্ময়</title>
+
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Font -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts for Bengali & Arabic - Optimized for Readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700&family=Noto+Naskh+Arabic:wght@400..700&family=Noto+Serif+Bengali:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Ads & Analytics -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RWPNQ8VPQF');
+    </script>
+
     <style>
+        :root {
+            --font-heading: 'Baloo Da 2', cursive;
+            --font-body: 'Noto Serif Bengali', serif;
+            --font-arabic: 'Noto Naskh Arabic', serif;
+            --color-background: #fdfdfc; /* Warm, soft off-white */
+            --color-text: #3d3d3d;
+            --color-primary: #2a4d69; /* Deep Cosmic Blue */
+            --color-card-bg: #ffffff;
+            --color-border: #e8eaf0;
+            --color-subtle-bg: #f4f6f7;
+        }
 
         body {
-            background-color: #f8f9fa;
+            background-color: var(--color-background);
+            font-family: var(--font-body);
+            color: var(--color-text);
+            font-size: 18px;
+            line-height: 1.8;
         }
+
+        /* --- Navbar & Footer --- */
+        .navbar { background-color: rgba(255, 255, 255, 0.8) !important; backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-border); }
+        .navbar-brand { font-family: var(--font-heading); font-weight: 700; }
+        footer { background-color: #2c2c2c; }
+
+        /* --- Blog Post Header --- */
         .blog-post-header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            text-align: center;
+            padding: 5rem 1rem;
+            background-color: var(--color-subtle-bg);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .blog-post-header h1 {
+            font-family: var(--font-heading);
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #2c2c2c;
+        }
+
+        /* --- Main Content Area --- */
+        .blog-content {
+            max-width: 750px;
+            margin: -4rem auto 0 auto;
+            background-color: var(--color-card-bg);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+            position: relative; z-index: 10;
+        }
+        .blog-content img.img-fluid { border-radius: 8px; margin-bottom: 2rem; }
+        
+        /* --- Post Meta (Tags, Date) --- */
+        .post-meta { font-size: 0.9rem; color: #777; }
+        .post-meta .badge { background-color: var(--color-primary) !important; color: white; font-weight: 500; padding: 0.4em 0.8em; }
+
+        /* --- Typography & Theming --- */
+        .blog-content h2 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+        }
+        .drop-cap { float: left; font-family: var(--font-heading); font-size: 5rem; line-height: 0.8; font-weight: 700; margin-right: 1rem; margin-top: 0.5rem; color: var(--color-primary); }
+
+        /* --- Featured Ayah Blockquote --- */
+        .ayah-quote {
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-subtle-bg);
+        }
+        .ayah-quote .arabic-text {
+            font-family: var(--font-arabic);
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 1.8;
+            color: var(--color-primary);
+            direction: rtl;
+        }
+        .ayah-quote .translation {
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #555;
+            margin-top: 1rem;
+        }
+        .ayah-quote .reference {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 1rem;
+            display: block;
+        }
+
+        /* --- Elegant Table Style --- */
+        .table {
+            margin-top: 1.5rem;
+            border: 1px solid var(--color-border);
+        }
+        .table thead {
+            background-color: var(--color-primary);
             color: white;
-            padding: 4rem 0;
+            font-family: var(--font-heading);
+            font-weight: 500;
+        }
+        .table th, .table td {
+            vertical-align: middle;
             text-align: center;
         }
-        .blog-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        .table tbody tr:nth-of-type(odd) {
+            background-color: var(--color-subtle-bg);
         }
-        .author-section {
-            border-top: 1px solid #e9ecef;
-            padding-top: 1rem;
-            margin-top: 2rem;
+        .table tbody tr:hover {
+            background-color: #e5e9ed;
+        }
+        .table .arabic-name {
+            font-family: var(--font-arabic);
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        /* --- Lessons Card --- */
+        .lessons-card { background-color: var(--color-subtle-bg); border: 1px solid var(--color-border); border-radius: 8px; margin-top: 3rem; }
+        .lessons-card .card-header { font-family: var(--font-heading); font-weight: 700; font-size: 1.3rem; background-color: transparent; border-bottom: 1px solid var(--color-border); color: var(--color-primary); }
+        .lessons-card .list-group-item { background-color: transparent; border: none; padding-left: 0; }
+        .lessons-card .list-group-item::before { content: "✨"; color: var(--color-primary); font-weight: bold; margin-right: 1rem; }
+
+        /* --- Author Section --- */
+        .author-section { border-top: 1px solid var(--color-border); padding-top: 2rem; margin-top: 3rem; }
+        .author-section h4 { font-family: var(--font-heading); font-weight: 700; }
+        
+        @media (max-width: 768px) {
+            .blog-post-header h1 { font-size: 2.2rem; }
+            .blog-content { padding: 1.5rem; margin-top: -3rem; }
+            .ayah-quote .arabic-text { font-size: 1.8rem; }
         }
     </style>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<!--Google Ads-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281"
-crossorigin="anonymous"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RWPNQ8VPQF');
-</script>
-
-
 </head>
-<body style="font-family: Sour Gummy;" >
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="70" height="70">ARAF <i class="bi bi-pencil-square me-2"></i>
+            <a class="navbar-brand" href="index.html">
+                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="50" height="50" style="margin-right: 10px;">ARAF
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html"> <i class="fas fa-home me-2"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"><i class="fas fa-layer-group me-2"></i> Categories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html">  <i class="fa-regular fa-address-card"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"><i class="bi bi-tag-fill me-1"></i> Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"><i class="bi bi-info-circle-fill me-1"></i> About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Blog Post Header -->
-    <div class="blog-post-header">
+    <header class="blog-post-header">
         <div class="container">
-            <h1 class="display-4">চন্দ্রের গতি, বিজ্ঞান ও কুরআনের আলোকে একটি বিস্ময়কর বাস্তবতা</h1>
-            <p class="lead">    </p>
+            <h1>চন্দ্রের গতি: বিজ্ঞান ও কুরআনের আলোকে এক বিস্ময়কর বাস্তবতা</h1>
         </div>
-    </div>
+    </header>
 
     <!-- Blog Content -->
-    <div class="container py-5" style="font-family: Noto Serif Bengali;">
-        <div class="blog-content">
-            <img src="/Sub-blogpost/img-cata/jimeng-2025-05-17-679-A circular diagram showing the 8 phases of the Moon, highlighting the full moo....jpeg" class="img-fluid mb-4" alt="Tech Innovations">
+    <main class="container py-5">
+        <article class="blog-content">
+            <img src="/Sub-blogpost/img-cata/jimeng-2025-05-17-679-A circular diagram showing the 8 phases of the Moon, highlighting the full moo....jpeg" class="img-fluid" alt="চাঁদের বিভিন্ন দশা">
             
             <div class="post-meta mb-4">
-                <span class="badge bg-primary">ইসলামিক-বিজ্ঞান </span>
-                <span class="ms-2"><i class="bi bi-calendar me-1"></i>June 18, 2025</span>
-                <span class="ms-2"><i class="bi bi-clock me-1"></i>10 min read</span>
+                <span class="badge">ইসলাম ও বিজ্ঞান</span>
+                <span class="ms-3"><i class="bi bi-calendar3 me-1"></i> জুন ১৮, ২০২৫</span>
+                <span class="ms-3"><i class="bi bi-clock me-1"></i> ৭ মিনিট পঠন</span>
             </div>
 
-            <br>
-                <h2>চন্দ্রের গতি, বিজ্ঞান ও কুরআনের আলোকে একটি বিস্ময়কর বাস্তবতা</h2>
-                
-             <p class="lead text-justify ">       📖 কুরআনের বাণী:
-وَالْقَمَرَ قَدَّرْنَاهُ مَنَازِلَ حَتَّىٰ عَادَ كَالْعُرْجُونِ الْقَدِيمِ
+            <div class="ayah-quote">
+                <p class="arabic-text">وَٱلْقَمَرَ قَدَّرْنَـٰهُ مَنَازِلَ حَتَّىٰ عَادَ كَٱلْعُرْجُونِ ٱلْقَدِيمِ</p>
+                <p class="translation">"আর চাঁদের জন্য আমরা নির্ধারণ করেছি বিভিন্ন মনজিল (অবস্থান), যতক্ষণ না তা পুরনো, শুকনো খেজুর শাখার মতো হয়ে যায়।"</p>
+                <span class="reference">— সূরা ইয়াসিন, আয়াত ৩৯</span>
+            </div>
+            
+            <p>
+                <span class="drop-cap">এ</span>ই আয়াতে মহান আল্লাহ তাআলা আমাদের জানাচ্ছেন যে, চাঁদ আকাশে বিশৃঙ্খলভাবে ঘুরে বেড়ায় না, বরং তার চলাচল একটি সুনির্দিষ্ট ও পরিমাপকৃত পথে বিভক্ত। এই পথকে কুরআনে বলা হয়েছে “মَنَازِلَ”—অর্থাৎ মনজিল বা পর্যায়ক্রমিক অবস্থান। চাঁদের এই সুশৃঙ্খল গতিপথ প্রাচীনকাল থেকে মানুষের জন্য সময় গণনা, ঋতু নির্ধারণ এবং দিক নির্ণয়ের এক নিখুঁত মহাজাগতিক ঘড়ি হিসেবে কাজ করে আসছে।
+            </p>
 
-বাংলা অর্থ:
-"আর চাঁদের জন্য আমরা নির্ধারণ করেছি বিভিন্ন মনজিল (অবস্থান), যতক্ষণ না তা পুরনো খেজুর ডালের মতো হয়ে যায়।"
-— (সূরা ইয়াসিন, আয়াত ৩৯)<br>
-🧭 এই আয়াতের ব্যাখ্যা ও তাৎপর্য:<br>
-এই আয়াতে মহান আল্লাহ তাআলা আমাদের জানাচ্ছেন, চাঁদ শুধু আকাশে ঘুরে বেড়ায় না, বরং তার চলাচল একটি নির্দিষ্ট গতি ও পথে বিভক্ত। এই পথকে কুরআনে বলা হয়েছে “মَنَازِلَ”—অর্থাৎ মনজিল বা বাসস্থান।
+            <h2>চাঁদের মনজিল কী?</h2>
+            <p>
+                আল্লাহ তাআলা চাঁদকে এক বিশেষ নিয়মে পরিচালিত করেন। চাঁদ প্রতি রাতে আকাশে একটি নির্দিষ্ট তারকাগুচ্ছ বা নক্ষত্রমণ্ডলের পাশে অবস্থান করে। এই অবস্থানগুলোকেই ‘মনজিল’ বলা হয়। ঐতিহাসিকভাবে জ্যোতির্বিদরা এই মনজিলগুলোকে ২৮টি ভাগে ভাগ করেছেন। অর্থাৎ, চাঁদ তার এক চান্দ্রমাসব্যাপী যাত্রাপথে প্রায় ২৮টি স্বতন্ত্র অবস্থান বা মনজিল অতিক্রম করে, যা শেষে পুরনো, বাঁকানো খেজুর ডালের মতো সরু হয়ে পুনরায় নতুন করে যাত্রা শুরু করে।
+            </p>
 
-চাঁদ প্রতি রাতে এক একটি নির্দিষ্ট তারকাচক্র বা নক্ষত্রমণ্ডলের পাশে অবস্থান করে। এই অবস্থানগুলোকে ঐতিহাসিকভাবে ২৮টি ভাগে ভাগ করা হয়েছে, যেগুলোর প্রতিটিকে বলা হয় একটি মনজিল। অর্থাৎ, চাঁদ ২৮ দিনে ২৮টি মনজিল অতিক্রম করে।
+            <h2>চন্দ্রের ২৮টি মনজিলের তালিকা</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ক্রম</th>
+                            <th>আরবি নাম</th>
+                            <th>উচ্চারণ</th>
+                            <th>বাংলা অর্থ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>১</td><td class="arabic-name">الشرطين</td><td>আশ-শারতাইন</td><td>দুটি চিহ্ন</td></tr>
+                        <tr><td>২</td><td class="arabic-name">البطين</td><td>আল-বুতাইন</td><td>ক্ষুদ্র উদর</td></tr>
+                        <tr><td>৩</td><td class="arabic-name">الثريا</td><td>আস-সুরাইয়া</td><td>কৃত্তিকা নক্ষত্রপুঞ্জ</td></tr>
+                        <tr><td>৪</td><td class="arabic-name">الدبران</td><td>আদ-দাবরান</td><td>অনুসরণকারী</td></tr>
+                        <tr><td>৫</td><td class="arabic-name">الهقعة</td><td>আল-হাক'আ</td><td>মাথার চুল</td></tr>
+                        <tr><td>৬</td><td class="arabic-name">الهنعة</td><td>আল-হান'আ</td><td>গলার দাগ</td></tr>
+                        <tr><td>৭</td><td class="arabic-name">الذراع</td><td>আয-জিরা'</td><td>প্রসারিত বাহু</td></tr>
+                        <tr><td>৮</td><td class="arabic-name">النثرة</td><td>আন-নাসরাহ</td><td>সিংহরাজের নাসিকা</td></tr>
+                        <tr><td>৯</td><td class="arabic-name">الطرف</td><td>আত-তারফ</td><td>চোখের পলক</td></tr>
+                        <tr><td>১০</td><td class="arabic-name">الجبهة</td><td>আল-জাবহা</td><td>কপাল</td></tr>
+                        <tr><td>১১</td><td class="arabic-name">الزبرة</td><td>আয-যুবরাহ</td><td>সিংহের কেশর</td></tr>
+                        <tr><td>১২</td><td class="arabic-name">الصرفة</td><td>আস-সারফাহ</td><td>পরিবর্তনকারী</td></tr>
+                        <tr><td>১৩</td><td class="arabic-name">العواء</td><td>আল-আউওয়া</td><td>আহ্বানকারী</td></tr>
+                        <tr><td>১৪</td><td class="arabic-name">السماك</td><td>আস-সিমাক</td><td>উন্নত অবস্থান</td></tr>
+                        <tr><td>১৫</td><td class="arabic-name">الغفر</td><td>আল-গাফর</td><td>ক্ষমা</td></tr>
+                        <tr><td>১৬</td><td class="arabic-name">الزبانا</td><td>আয-যুবানা</td><td>কাঁকড়ার দাঁড়া</td></tr>
+                        <tr><td>১৭</td><td class="arabic-name">الإكليل</td><td>আল-ইক্লীল</td><td>মুকুট</td></tr>
+                        <tr><td>১৮</td><td class="arabic-name">القلب</td><td>আল-কলব</td><td>বৃশ্চিকের হৃদয়</td></tr>
+                        <tr><td>১৯</td><td class="arabic-name">الشولة</td><td>আশ-শাওলাহ</td><td>কাঁটা বা হুল</td></tr>
+                        <tr><td>২০</td><td class="arabic-name">النعايم</td><td>আন-না'আয়িম</td><td>উটপাখি</td></tr>
+                        <tr><td>২১</td><td class="arabic-name">البلدة</td><td>আল-বালদাহ</td><td>খালি স্থান</td></tr>
+                        <tr><td>২২</td><td class="arabic-name">سعد الذابح</td><td>সা'দ আয-যাবিহ</td><td>কসাইয়ের সৌভাগ্য</td></tr>
+                        <tr><td>২৩</td><td class="arabic-name">سعد بلع</td><td>সা'দ বুলা'</td><td>গিলে ফেলার সৌভাগ্য</td></tr>
+                        <tr><td>২৪</td><td class="arabic-name">سعد السعود</td><td>সা'দ আস-সু'উদ</td><td>সৌভাগ্যের সৌভাগ্য</td></tr>
+                        <tr><td>২৫</td><td class="arabic-name">سعد الأخبية</td><td>সা'দ আল-আখবিয়াহ</td><td>তাবুর সৌভাগ্য</td></tr>
+                        <tr><td>২৬</td><td class="arabic-name">المقدم</td><td>আল-মুকাদ্দিম</td><td>অগ্রবর্তী অংশ</td></tr>
+                        <tr><td>২৭</td><td class="arabic-name">المؤخر</td><td>আল-মু'আখখির</td><td>পশ্চাদবর্তী অংশ</td></tr>
+                        <tr><td>২৮</td><td class="arabic-name">الرشا</td><td>আর-রিশা'</td><td>দড়ি</td></tr>
+                    </tbody>
+                </table>
+            </div>
 
-<br>🔭 মনজিল ও আধুনিক বিজ্ঞান:<br>
-আধুনিক জ্যোতির্বিজ্ঞান বলছে, চাঁদের একটি আবর্তন সময় প্রায় ২৯.৫ দিন। তবে প্রাচীন আরব ও ইসলামিক জ্ঞান অনুযায়ী, চাঁদ ২৮টি গন্তব্য অতিক্রম করে যার প্রতিটি অংশে সে একদিন অবস্থান করে। এই মনজিলগুলো নাক্ষত্রিক অবস্থানের উপর ভিত্তি করে ভাগ করা, যা কৃষি, মাস নির্ধারণ এবং হিজরি ক্যালেন্ডার পরিচালনায় ব্যবহৃত হতো।
-<br>
-<br>🌙 চাঁদের মনজিল কী?<br>
-আল্লাহ তাআলা চাঁদকে এক বিশেষ নিয়মে পরিচালিত করেন। মানুষ যেমন প্রতিদিন একটি নির্দিষ্ট গন্তব্যে পৌঁছায়, তেমনি চাঁদও আকাশে এক একটি নির্দিষ্ট অবস্থান বা মনজিল অতিক্রম করে। এই মনজিলগুলো হলো ২৮টি নির্ধারিত জায়গা, যেগুলো চাঁদ মাসব্যাপী ধাপে ধাপে পার হয়।
- <br>  <h2 class="section-title">চন্দ্রের ২৮টি মনজিলের তালিকা</h2>
-                
-<div class="table-responsive">
-    <table class="table table-bordered table-hover">
-        <thead class="table-dark">
-            <tr>
-                <th width="8%" class="text-center">ক্রম</th>
-                <th width="25%" class="text-center">আরবি নাম</th>
-                <th width="25%" class="text-center">উচ্চারণ</th>
-                <th width="42%" class="text-center">বাংলা অর্থ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-primary"><td>১</td><td>الشرطين</td><td>আশ-শারতাইন</td><td>দুটি চিহ্ন</td></tr>
-            <tr class="table-secondary"><td>২</td><td>البطين</td><td>আল-বুতাইন</td><td>পেটের গভীর স্থান</td></tr>
-            <tr class="table-success"><td>৩</td><td>الثريا</td><td>আস-সুরাইয়া</td><td>প্লেইয়াডিস নক্ষত্র</td></tr>
-            <tr class="table-danger"><td>৪</td><td>الدبران</td><td>আদ-দাবরান</td><td>অনুসরণকারী</td></tr>
-            <tr class="table-warning"><td>৫</td><td>الهقعة</td><td>আল-হাকাআ</td><td>মাথার ওপরের অংশ</td></tr>
-            <tr class="table-info"><td>৬</td><td>الهنعة</td><td>আল-হিনআহ</td><td>গলার অঞ্চল</td></tr>
-            <tr class="table-light"><td>৭</td><td>الذراع</td><td>আয-জিরা'</td><td>বাহু</td></tr>
-            <tr class="table-primary"><td>৮</td><td>النثرة</td><td>আন-নাথরা</td><td>নাকের ডগা</td></tr>
-            <tr class="table-secondary"><td>৯</td><td>الطرف</td><td>আত-তারফ</td><td>চোখের প্রান্ত</td></tr>
-            <tr class="table-success"><td>১০</td><td>الجبهة</td><td>আল-জাবহা</td><td>কপাল</td></tr>
-            <tr class="table-danger"><td>১১</td><td>الزبرة</td><td>আয-যিবরা</td><td>পশুর পিঠ</td></tr>
-            <tr class="table-warning"><td>১২</td><td>الصرفة</td><td>আস-সারফা</td><td>পরিবর্তন</td></tr>
-            <tr class="table-info"><td>১৩</td><td>العواء</td><td>আল-আউয়া</td><td>ডাক, গর্জন</td></tr>
-            <tr class="table-light"><td>১৪</td><td>السماك</td><td>আস-সিমাক</td><td>উঁচু তারকা</td></tr>
-            <tr class="table-primary"><td>১৫</td><td>الغفر</td><td>আল-গাফর</td><td>আচ্ছাদন</td></tr>
-            <tr class="table-secondary"><td>১৬</td><td>الزبانا</td><td>আয-যুবানা</td><td>নখ</td></tr>
-            <tr class="table-success"><td>১৭</td><td>الإكليل</td><td>আল-ইক্লীল</td><td>মুকুট</td></tr>
-            <tr class="table-danger"><td>১৮</td><td>القلب</td><td>আল-কলব</td><td>হৃদয়</td></tr>
-            <tr class="table-warning"><td>১৯</td><td>الشولة</td><td>আশ-শাওলা</td><td>লেজ বা কাঁটা</td></tr>
-            <tr class="table-info"><td>২০</td><td>النعايم</td><td>আন-নাআইম</td><td>শান্তিপূর্ণ তারকা</td></tr>
-            <tr class="table-light"><td>২১</td><td>البلدة</td><td>আল-বালদাহ</td><td>জনপদ</td></tr>
-            <tr class="table-primary"><td>২২</td><td>سعد الذابح</td><td>সা'দ আয-যাবিহ</td><td>সৌভাগ্যবান উৎসর্গকারী</td></tr>
-            <tr class="table-secondary"><td>২৩</td><td>سعد بلع</td><td>সা'দ বালা'</td><td>গলাধঃকরণ সৌভাগ্য</td></tr>
-            <tr class="table-success"><td>২৪</td><td>سعد السعود</td><td>সা'দ আস-সু'উদ</td><td>সৌভাগ্যের সৌভাগ্য</td></tr>
-            <tr class="table-danger"><td>২৫</td><td>سعد الأخبية</td><td>সা'দ আল-আখবিয়া</td><td>গোপন সৌভাগ্য</td></tr>
-            <tr class="table-warning"><td>২৬</td><td>المقدم</td><td>আল-মুকাদ্দিম</td><td>অগ্রবর্তী</td></tr>
-            <tr class="table-info"><td>২৭</td><td>المؤخر</td><td>আল-মু'খির</td><td>পশ্চাদবর্তী</td></tr>
-            <tr class="table-light"><td>২৮</td><td>الرشا</td><td>আর-রিশা</td><td>দড়ি বা পুলি (পানি তোলার যন্ত্র)</td></tr>
-        </tbody>
-    </table>
-</div><br>
-<br><p  class="lead text-justify ">🌌 বৈজ্ঞানিক মিল:<br>
-আধুনিক জ্যোতির্বিজ্ঞান বলছে—
-
-চাঁদ তার এক মাসব্যাপী আবর্তনে ২৮টি নক্ষত্রমণ্ডল বা মনজিল অতিক্রম করে।
-
-প্রতিটি মনজিলের দৈর্ঘ্য প্রায় ১৩ ডিগ্রি।
-
-এই গতি ইসলামিক ক্যালেন্ডার, কৃষি, আবহাওয়া ও প্রাচীন নৌ-চালনায় গুরুত্বপূর্ণ ছিল।</p>
-<br><p  class="lead text-justify ">🌟 শিক্ষণীয় দিক:<br>
-এই আয়াত ও মনজিলের ধারণা আমাদের শেখায়—
-
-প্রকৃতিতে কোনও কিছুই অগোছালো নয়।
-
-চাঁদের শৃঙ্খলা আমাদের জীবনেরও শৃঙ্খলার অনুপ্রেরণা।
-
-আল্লাহর প্রত্যেক সৃষ্টি নির্দিষ্ট নিয়মে চলে, আমাদেরও তেমনভাবে চলা উচিত।<br>
-
-📘 উপসংহার:<br>
-সূরা ইয়াসিনের এই ছোট্ট একটি আয়াত—যা আজ থেকে প্রায় ১৪০০ বছর আগে নাজিল হয়েছে—আজকের বিজ্ঞানেও বিস্ময় সৃষ্টি করে। এটি প্রমাণ করে কুরআনের জ্ঞান শুধু ধর্মীয় নয়, বরং মহাবিশ্বের গভীরতর বাস্তবতাকেও স্পর্শ করে।
-
-</p>
-
-
- </p>
-
- <br><p>(সূরা ইয়াসিন, আয়াত ৩৯)</p>
-</p>
-                <h3></h3>
-                <ul>
-                   
-                </ul>
-
-                <p></p>
-
-                <blockquote class="blockquote bg-light p-3 my-4">
-                    </blockquote>
-
-                <h3></h3>
-                <p></p> </article>
+            <!-- Lessons Card -->
+            <div class="card lessons-card">
+              <div class="card-header">
+                কুরআন ও বিজ্ঞানের মেলবন্ধন থেকে শিক্ষণীয়
+              </div>
+              <ul class="list-group list-group-flush p-3">
+                  <li class="list-group-item">মহাবিশ্বের প্রতিটি বস্তু, এমনকি চাঁদও একটি নিখুঁত ঐশ্বরিক নিয়ম ও শৃঙ্খলার অধীনে পরিচালিত।</li>
+                  <li class="list-group-item">১৪০০ বছর পূর্বে কুরআনে বর্ণিত চাঁদের ‘মনজিল’ বা পর্যায়ক্রমিক অবস্থানের ধারণা আধুনিক জ্যোতির্বিজ্ঞানের সাথে সম্পূর্ণরূপে সামঞ্জস্যপূর্ণ।</li>
+                  <li class="list-group-item">আল্লাহর সৃষ্টিকে পর্যবেক্ষণ ও গবেষণা করাও এক প্রকার ইবাদত, যা ঈমানকে আরও মজবুত করে।</li>
+                  <li class="list-group-item">চাঁদের এই সুশৃঙ্খল গতিপথ আমাদের জীবনের প্রতিটি ক্ষেত্রে শৃঙ্খলা ও নিয়মানুবর্তিতার গুরুত্ব শেখায়।</li>
+              </ul>
+            </div>
 
             <!-- Author Section -->
-            <div class="author-section text-center mt-5">
+            <div class="author-section text-center">
                 <img src="/image/image.png" class="rounded-circle mb-3" alt="Author" width="100" height="100">
-                <h4> লেখক:মোহাম্মদ আবু তালহা</h4>
-                <h5>উৎস: সূরা ইয়াসিন, আয়াত ৩৯</h5>
-                <p class="text-muted"></p>
+                <h4>লেখক: মোহাম্মদ আবু তালহা</h4>
+                <p class="text-muted">গবেষক, কুরআন ও বিজ্ঞান</p>
             </div>
-        </div>
-    </div>
+        </article>
+    </main>
 
-    <!-- Related Posts -->
-  <!--  <section class="container py-5 bg-light">
-        <h3 class="text-center mb-4">Related Posts</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Blockchain Revolution</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Future of Cloud Computing</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Quantum Computing</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="text-white text-center py-4 mt-5">
         <div class="container">
-            <p class="mb-0">&copy; 2024 ARAF. All Rights Reserved.</p>
+            <p class="mb-0">© 2024 ARAF. All Rights Reserved.</p>
         </div>
     </footer>
 

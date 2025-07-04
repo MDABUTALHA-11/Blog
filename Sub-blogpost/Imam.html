@@ -1,183 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <!-- Google Meta Data -->
-    <meta name="google-adsense-account" content="ca-pub-9116809033361281">
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ইমাম আবু হানিফা (রহ.)</title>
+    <meta name="google-adsense-account" content="ca-pub-9116809033361281">
+    <title>ইমাম আবু হানিফা (রহ.) – একটি জ্ঞানগর্ভ কাহিনি</title>
+
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Font -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
     
+    <!-- Google Fonts for Bengali - Optimized for Readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700&family=Noto+Serif+Bengali:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Google Ads & Analytics -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RWPNQ8VPQF');
+    </script>
+
+    <style>
+        :root {
+            --font-heading: 'Baloo Da 2', cursive;
+            --font-body: 'Noto Serif Bengali', serif;
+            --color-background: #fdfdfc; /* Warm, soft off-white */
+            --color-text: #3d3d3d; /* Dark grey, easier on the eyes */
+            --color-primary: #c0a062; /* Elegant gold accent */
+            --color-card-bg: #ffffff;
+            --color-border: #e9ecef;
+        }
+
         body {
-            background-color: #f8f9fa;
+            background-color: var(--color-background);
+            font-family: var(--font-body);
+            color: var(--color-text);
+            font-size: 18px; /* Slightly larger base font size */
+            line-height: 1.8; /* Generous line spacing for readability */
         }
+
+        /* --- Navbar --- */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--color-border);
+        }
+        .navbar-brand {
+            font-family: var(--font-heading);
+            font-weight: 700;
+        }
+        .nav-link {
+            font-weight: 500;
+        }
+
+        /* --- Blog Post Header --- */
         .blog-post-header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 4rem 0;
             text-align: center;
+            padding: 5rem 1rem;
+            background-color: #f8f6f2; /* A subtle, textured background */
+            border-bottom: 1px solid var(--color-border);
         }
+        .blog-post-header h1 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c2c2c;
+        }
+
+        /* --- Main Content Area --- */
         .blog-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 750px; /* Optimal width for reading */
+            margin: -4rem auto 0 auto; /* Pulls the card up into the header */
+            background-color: var(--color-card-bg);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+            position: relative;
+            z-index: 10;
         }
+
+        .blog-content img.img-fluid {
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        /* --- Post Meta (Tags, Date) --- */
+        .post-meta {
+            font-size: 0.9rem;
+            color: #777;
+        }
+        .post-meta .badge {
+            background-color: var(--color-primary) !important;
+            color: white;
+            font-weight: 500;
+            padding: 0.4em 0.8em;
+        }
+        .post-meta .ms-2 {
+            margin-left: 1rem !important;
+        }
+
+        /* --- Typography for the Story --- */
+        .blog-content h2 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            margin-top: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c2c2c;
+        }
+        
+        .blog-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* The Classic Storybook Drop Cap */
+        .drop-cap {
+            float: left;
+            font-family: var(--font-heading);
+            font-size: 5rem;
+            line-height: 0.8;
+            font-weight: 700;
+            margin-right: 1rem;
+            margin-top: 0.5rem;
+            color: var(--color-primary);
+        }
+
+        /* --- Styled Blockquote --- */
+        .blockquote {
+            font-family: var(--font-body);
+            font-style: italic;
+            border-left: 4px solid var(--color-primary);
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+            background-color: #f8f6f2;
+            color: #555;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        /* --- Author Section --- */
         .author-section {
-            border-top: 1px solid #e9ecef;
-            padding-top: 1rem;
-            margin-top: 2rem;
+            border-top: 1px solid var(--color-border);
+            padding-top: 2rem;
+            margin-top: 3rem;
+        }
+        .author-section h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: #333;
+        }
+        
+        /* --- Footer --- */
+        footer {
+            background-color: #2c2c2c;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .blog-post-header h1 {
+                font-size: 2.5rem;
+            }
+            .blog-content {
+                padding: 1.5rem;
+                margin-top: -3rem;
+            }
         }
     </style>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<!--Google Ads-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281"
-crossorigin="anonymous"></script>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RWPNQ8VPQF');
-</script>
-
 </head>
-<body style="font-family: Sour Gummy;" >
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="70" height="70">ARAF <i class="bi bi-pencil-square me-2"></i>
+            <a class="navbar-brand" href="index.html">
+                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="50" height="50" style="margin-right: 10px;">ARAF
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html"> <i class="fas fa-home me-2"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"> <i class="fas fa-layer-group me-2"></i>Categories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"> <i class="fa-regular fa-address-card"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"><i class="bi bi-tag-fill me-1"></i> Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"><i class="bi bi-info-circle-fill me-1"></i> About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Blog Post Header -->
-    <div class="blog-post-header">
+    <header class="blog-post-header">
         <div class="container">
-            <h1 class="display-4">ইমাম আবু হানিফা (রহ.)</h1>
-            <p class="lead">    </p>
+            <h1>ইমাম আবু হানিফা (রহ.)</h1>
         </div>
-    </div>
+    </header>
 
     <!-- Blog Content -->
-    <div class="container py-5" style="font-family: Noto Serif Bengali;">
-        <div class="blog-content">
-            <img src="/image/Trees in jungle ,comic image.png" class="img-fluid mb-4" alt="Tech Innovations">
+    <main class="container py-5">
+        <article class="blog-content">
+            <img src="/image/Trees in jungle ,comic image.png" class="img-fluid" alt="একটি নদীর ধারে গাছপালা">
             
             <div class="post-meta mb-4">
-                <span class="badge bg-primary">ঘটনা</span>
-                <span class="ms-2"><i class="bi bi-calendar me-1"></i>November 19, 2024</span>
-                <span class="ms-2"><i class="bi bi-clock me-1"></i>5 min read</span>
+                <span class="badge">ঘটনা</span>
+                <span class="ms-2"><i class="bi bi-calendar3 me-1"></i> নভেম্বর ১৯, ২০২৪</span>
+                <span class="ms-2"><i class="bi bi-clock me-1"></i> ৫ মিনিট পঠন</span>
             </div>
 
-            <br>
-                <h2>ইমাম আবু হানিফা (রহ.) এর কাহিনি</h2>
-                <p class="lead">
-                    ইসলামের স্বর্ণযুগের কথা। একবার ইমাম আবু হানিফা (রহ.)–এর সঙ্গে একদল লোকের বিতর্ক ঠিক হলো। তারা ছিল সে সময়ের নাস্তিক, যারা স্রষ্টায় বিশ্বাস করত না। তাদের বলা হতো ‘আদ–দাহরি’। তারা বিশ্বাস করত সবকিছু এসেছে শূন্য থেকে এবং আমাদের চারপাশের প্রকৃতি ও পরিবেশ সবকিছু সৃষ্টির জন্য দায়ী।
-
-                    এক বিতর্কের দিন ইমাম আবু হানিফা (রহ.) সভায় পৌঁছালেন এক ঘণ্টা দেরি করে। তিনি আসার পর আদ–দাহরিরা ক্ষেপে গেল। তারা বলতে লাগল, ‘আপনার দেরিতে আসাই ইঙ্গিত দিচ্ছে, আপনার এই স্রষ্টার ধারণা কতটা দুর্বল। আপনি আমাদের সঙ্গে কথা বলতেই ভয় পাচ্ছেন।’
-                    তখন ইমাম আবু হানিফা (রহ.) বললেন, ‘আসলে না। আমি যখন পথ দিয়ে হেঁটে আসছিলাম, তখন আমার সামনে বিশাল এক নদী চলে এল। কিন্তু আমার সঙ্গে তো কোনো নৌকা ছিল না। আমি তখন সেখানে বসে ভাবতে লাগলাম। আমি দেখলাম, হঠাৎ একটি গাছ কেটে তক্তা হয়ে যাচ্ছে। এরপর বাতাসের তীব্র বেগে সেই তক্তাগুলোয় পেরেক ঢুকে যাচ্ছে। আমার চোখের সামনে সব কটি তক্তা মিলে একটি সুন্দর নৌকা তৈরি হয়ে গেল। আমি সেই নৌকায় চড়ে নদী পার হয়ে এই সভায় এসে পৌঁছেছি। প্রকৃতির এই বিচিত্র খেলা দেখতে গিয়ে আমার এক ঘণ্টা দেরি হয়ে গেল।’
-                    ইমাম আবু হানিফা (রহ.)–এর মুখে এই গল্প শুনে আদ–দাহরিরা একে অপরের সঙ্গে হাসিঠাট্টা করতে লাগল। তারা বলল, ‘আপনি নিজের দোষ স্বীকার না করে এই বানানো গল্প আমাদের বিশ্বাস করতে বলছেন?’ তখন আবু হানিফা (রহ.) বললেন, ‘একই প্রশ্ন আপনাদের কাছেও করা যাক। সামান্য এই নৌকা যে আপনাআপনি তৈরি হতে পারে, সেটা বিশ্বাস করতে আপনাদের এত কষ্ট হচ্ছে অথচ এই বিশ্ব–আকাশ–পর্বত–নদীনালা–মানুষ—এগুলো সব আপনাআপনি সৃষ্টি হয়েছে, সেটা কী করে বিশ্বাস করে ফেললেন?’
-
-ইমাম আবু হানিফা (রহ.)-এর যুক্তি ছিল খুবই সরল। এ পৃথিবীতে কিছু না কিছু আমাদের নিয়ে এসেছে। একদম শূন্য থেকে কোনো কিছু আসতে পারে না। প্রতিটি জিনিসের পেছনে কারণ আছে। প্রতিটি সৃষ্টির পেছনে একজন স্রষ্টা আছেন।
-ইমাম শাফেয়ি (রহ.) এ বিষয়ে আরও বিস্তারিত ব্যাখ্যা দিয়েছিলেন। এক ব্যক্তি এসে ইমাম শাফেয়ি (রহ.)–কে জিজ্ঞাসা করলেন, ‘আপনি কীভাবে জানেন যে আমাদের একজন স্রষ্টা আছেন?’ তখন শাফেয়ি (রহ.) বলেছিলেন, ‘তুতগাছের এই পাতার দিকে কিছুক্ষণ খেয়াল করো। এর নকশাগুলো দেখো। তুমি কি খেয়াল করেছ, একটি পাতার সঙ্গে আরেকটি পাতার কত মিল? এই পাতা যদি একটি রেশম পোকা খায়, এটি হয়ে যায় রেশম; মৌমাছি এটি খেলে, এটি হয়ে যায় মধু; যখন এই পাতা কোনো ভেড়া খায়, তখন এটি হয়ে যায় দুধ; আবার যখন কোনো হরিণ এটি খায়, তখন এটি হয়ে যায় মেশক বা সুগন্ধি। একজন স্রষ্টা ছাড়া এটা কীভাবে সম্ভব? এতটা বৈচিত্র্য কি আপনাআপনি হতে পারে?
-
-এরপর তিনি সুরা মুমিনুনের আয়াত তিলাওয়াত করলেন, ‘নিপুণতম স্রষ্টা আল্লাহ, তিনি কতই না কল্যাণময়!’
-                </p>
-                    
- <p></p>
-
-                <h3></h3>
-                <ul>
-                   
-                </ul>
-
-                <p></p>
-
-                <blockquote class="blockquote bg-light p-3 my-4">
-                    </blockquote>
-
-                <h3></h3>
-                <p></p> </article>
+            <p class="lead">
+                <span class="drop-cap">ই</span>সলামের স্বর্ণযুগের কথা। একবার ইমাম আবু হানিফা (রহ.)–এর সঙ্গে একদল লোকের বিতর্ক ঠিক হলো। তারা ছিল সে সময়ের নাস্তিক, যারা স্রষ্টায় বিশ্বাস করত না। তাদের বলা হতো ‘আদ–দাহরি’। তারা বিশ্বাস করত সবকিছু এসেছে শূন্য থেকে এবং আমাদের চারপাশের প্রকৃতি ও পরিবেশ সবকিছু সৃষ্টির জন্য দায়ী।
+            </p>
+            <p>
+                এক বিতর্কের দিন ইমাম আবু হানিফা (রহ.) সভায় পৌঁছালেন এক ঘণ্টা দেরি করে। তিনি আসার পর আদ–দাহরিরা ক্ষেপে গেল। তারা বলতে লাগল, ‘আপনার দেরিতে আসাই ইঙ্গিত দিচ্ছে, আপনার এই স্রষ্টার ধারণা কতটা দুর্বল। আপনি আমাদের সঙ্গে কথা বলতেই ভয় পাচ্ছেন।’
+                তখন ইমাম আবু হানিফা (রহ.) বললেন, ‘আসলে না। আমি যখন পথ দিয়ে হেঁটে আসছিলাম, তখন আমার সামনে বিশাল এক নদী চলে এল। কিন্তু আমার সঙ্গে তো কোনো নৌকা ছিল না। আমি তখন সেখানে বসে ভাবতে লাগলাম। আমি দেখলাম, হঠাৎ একটি গাছ কেটে তক্তা হয়ে যাচ্ছে। এরপর বাতাসের তীব্র বেগে সেই তক্তাগুলোয় পেরেক ঢুকে যাচ্ছে। আমার চোখের সামনে সব কটি তক্তা মিলে একটি সুন্দর নৌকা তৈরি হয়ে গেল। আমি সেই নৌকায় চড়ে নদী পার হয়ে এই সভায় এসে পৌঁছেছি। প্রকৃতির এই বিচিত্র খেলা দেখতে গিয়ে আমার এক ঘণ্টা দেরি হয়ে গেল।’
+            </p>
+            <p>
+                ইমাম আবু হানিফা (রহ.)–এর মুখে এই গল্প শুনে আদ–দাহরিরা একে অপরের সঙ্গে হাসিঠাট্টা করতে লাগল। তারা বলল, ‘আপনি নিজের দোষ স্বীকার না করে এই বানানো গল্প আমাদের বিশ্বাস করতে বলছেন?’ তখন আবু হানিফা (রহ.) বললেন, ‘একই প্রশ্ন আপনাদের কাছেও করা যাক। সামান্য এই নৌকা যে আপনাআপনি তৈরি হতে পারে, সেটা বিশ্বাস করতে আপনাদের এত কষ্ট হচ্ছে অথচ এই বিশ্ব–আকাশ–পর্বত–নদীনালা–মানুষ—এগুলো সব আপনাআপনি সৃষ্টি হয়েছে, সেটা কী করে বিশ্বাস করে ফেললেন?’
+            </p>
+            
+            <h2>এক পাতার বিস্ময়</h2>
+            <p>
+                ইমাম আবু হানিফা (রহ.)-এর যুক্তি ছিল খুবই সরল। এ পৃথিবীতে কিছু না কিছু আমাদের নিয়ে এসেছে। একদম শূন্য থেকে কোনো কিছু আসতে পারে না। প্রতিটি জিনিসের পেছনে কারণ আছে। প্রতিটি সৃষ্টির পেছনে একজন স্রষ্টা আছেন।
+            </p>
+            <p>
+                ইমাম শাফেয়ি (রহ.) এ বিষয়ে আরও বিস্তারিত ব্যাখ্যা দিয়েছিলেন। এক ব্যক্তি এসে ইমাম শাফেয়ি (রহ.)–কে জিজ্ঞাসা করলেন, ‘আপনি কীভাবে জানেন যে আমাদের একজন স্রষ্টা আছেন?’ তখন শাফেয়ি (রহ.) বলেছিলেন, ‘তুতগাছের এই পাতার দিকে কিছুক্ষণ খেয়াল করো। এর নকশাগুলো দেখো। তুমি কি খেয়াল করেছ, একটি পাতার সঙ্গে আরেকটি পাতার কত মিল? এই পাতা যদি একটি রেশম পোকা খায়, এটি হয়ে যায় রেশম; মৌমাছি এটি খেলে, এটি হয়ে যায় মধু; যখন এই পাতা কোনো ভেড়া খায়, তখন এটি হয়ে যায় দুধ; আবার যখন কোনো হরিণ এটি খায়, তখন এটি হয়ে যায় মেশক বা সুগন্ধি।
+            </p>
+            
+            <blockquote class="blockquote">
+                “একজন স্রষ্টা ছাড়া এটা কীভাবে সম্ভব? এতটা বৈচিত্র্য কি আপনাআপনি হতে পারে?”
+            </blockquote>
+            
+            <p>
+                এরপর তিনি সুরা মুমিনুনের আয়াত তিলাওয়াত করলেন, ‘নিপুণতম স্রষ্টা আল্লাহ, তিনি কতই না কল্যাণময়!’
+            </p>
 
             <!-- Author Section -->
-            <div class="author-section text-center mt-5">
+            <div class="author-section text-center">
                 <img src="/image/image.png" class="rounded-circle mb-3" alt="Author" width="100" height="100">
                 <h4>লেখক: মোহাম্মদ আবু তালহা</h4>
-                <p class="text-muted"></p>
+                <p class="text-muted">গল্পকার ও গবেষক</p>
             </div>
-        </div>
-    </div>
-
-    <!-- Related Posts -->
- <!--   <section class="container py-5 bg-light">
-        <h3 class="text-center mb-4">Related Posts</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Blockchain Revolution</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Future of Cloud Computing</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Quantum Computing</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
+        </article>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="text-white text-center py-4 mt-5">
         <div class="container">
-            <p class="mb-0">&copy; 2024 ARAF. All Rights Reserved.</p>
+            <p class="mb-0">© 2024 ARAF. All Rights Reserved.</p>
         </div>
     </footer>
 

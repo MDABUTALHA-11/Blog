@@ -1,187 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <!-- Google Meta Data -->
-    <meta name="google-adsense-account" content="ca-pub-9116809033361281">
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ক্ষমা </title>
+    <meta name="google-adsense-account" content="ca-pub-9116809033361281">
+    <title>আল্লাহর ক্ষমার মহাসাগর: ফিরে আসার এখনই সময়</title>
+
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Font -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!--Google Ads-->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281"
-     crossorigin="anonymous"></script>
     
+    <!-- Google Fonts for Bengali & Arabic - Optimized for Readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700&family=Noto+Naskh+Arabic:wght@400..700&family=Noto+Serif+Bengali:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Ads & Analytics -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RWPNQ8VPQF');
+    </script>
+
     <style>
-    
+        :root {
+            --font-heading: 'Baloo Da 2', cursive;
+            --font-body: 'Noto Serif Bengali', serif;
+            --font-arabic: 'Noto Naskh Arabic', serif;
+            --color-background: #fdfdfc;
+            --color-text: #3d3d3d;
+            --color-primary: #00796b; /* Serene Teal for Hope */
+            --color-accent: #b2dfdb; /* Light, soft teal */
+            --color-card-bg: #ffffff;
+            --color-border: #e0f2f1;
+            --color-subtle-bg: #f7fbfb;
+        }
+
         body {
-            background-color: #f8f9fa;
+            background-color: var(--color-background);
+            font-family: var(--font-body);
+            color: var(--color-text);
+            font-size: 18px;
+            line-height: 1.8;
         }
-        .blog-post-header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
+
+        /* --- Navbar & Footer --- */
+        .navbar { background-color: rgba(255, 255, 255, 0.8) !important; backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-border); }
+        .navbar-brand { font-family: var(--font-heading); font-weight: 700; }
+        footer { background-color: #2c2c2c; }
+
+        /* --- Blog Post Header --- */
+        .blog-post-header { text-align: center; padding: 5rem 1rem; background-color: var(--color-subtle-bg); border-bottom: 1px solid var(--color-border); }
+        .blog-post-header h1 { font-family: var(--font-heading); font-size: 3.2rem; font-weight: 700; color: #2c2c2c; }
+
+        /* --- Main Content Area --- */
+        .blog-content { max-width: 750px; margin: -4rem auto 0 auto; background-color: var(--color-card-bg); padding: 3rem; border-radius: 8px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07); position: relative; z-index: 10; }
+        .blog-content img.img-fluid { border-radius: 8px; margin-bottom: 2rem; }
+        
+        /* --- Post Meta (Tags, Date) --- */
+        .post-meta { font-size: 0.9rem; color: #777; }
+        .post-meta .badge { background-color: var(--color-primary) !important; color: white; font-weight: 500; padding: 0.4em 0.8em; }
+
+        /* --- Typography & Theming --- */
+        .blog-content h2 { font-family: var(--font-heading); font-weight: 700; margin-top: 2.5rem; margin-bottom: 1.5rem; color: var(--color-primary); }
+        .drop-cap { float: left; font-family: var(--font-heading); font-size: 5rem; line-height: 0.8; font-weight: 700; margin-right: 1rem; margin-top: 0.5rem; color: var(--color-primary); }
+
+        /* --- Featured Ayah Blockquote --- */
+        .ayah-quote { text-align: center; padding: 2rem; margin: 1rem 0 2rem 0; border: 1px solid var(--color-border); background-color: var(--color-subtle-bg); border-radius: 8px; }
+        .ayah-quote .arabic-text { font-family: var(--font-arabic); font-size: 2.2rem; font-weight: 500; line-height: 1.8; color: var(--color-primary); direction: rtl; }
+        .ayah-quote .translation { font-style: italic; font-size: 1.1rem; color: #555; margin-top: 1rem; }
+        .ayah-quote .reference { font-size: 0.9rem; color: #777; margin-top: 1rem; display: block; }
+        
+        /* --- Hadith Blockquote --- */
+        .hadith-quote {
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0;
+            background-color: var(--color-subtle-bg);
+            border-left: 5px solid var(--color-accent);
+            border-radius: 0 8px 8px 0;
         }
-        .blog-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .author-section {
-            border-top: 1px solid #e9ecef;
-            padding-top: 1rem;
-            margin-top: 2rem;
+        .hadith-quote p { margin-bottom: 0; font-size: 1.1rem; font-style: italic; color: #444; }
+        .hadith-quote .source { display: block; text-align: right; font-size: 0.9rem; margin-top: 1rem; color: #777; font-style: normal; }
+
+        /* --- Lessons Card --- */
+        .lessons-card { background-color: var(--color-subtle-bg); border: 1px solid var(--color-border); border-radius: 8px; margin-top: 3rem; }
+        .lessons-card .card-header { font-family: var(--font-heading); font-weight: 700; font-size: 1.3rem; background-color: transparent; border-bottom: 1px solid var(--color-border); color: var(--color-primary); }
+        .lessons-card .list-group-item { background-color: transparent; border: none; padding-left: 0; }
+        .lessons-card .list-group-item::before { content: "✔"; color: var(--color-primary); font-weight: bold; margin-right: 1rem; }
+
+        /* --- Author Section --- */
+        .author-section { border-top: 1px solid var(--color-border); padding-top: 2rem; margin-top: 3rem; }
+        .author-section h4 { font-family: var(--font-heading); font-weight: 700; }
+        
+        @media (max-width: 768px) {
+            .blog-post-header h1 { font-size: 2.5rem; }
+            .blog-content { padding: 1.5rem; margin-top: -3rem; }
         }
     </style>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
- 
-<!-- Google Analytics-->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RWPNQ8VPQF');
-</script>
-
 </head>
-<body style="font-family: Sour Gummy;" >
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="70" height="70">ARAF <i class="bi bi-pencil-square me-2"></i>
+            <a class="navbar-brand" href="index.html">
+                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="50" height="50" style="margin-right: 10px;">ARAF
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html"> <i class="fas fa-home me-2"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"> <i class="fas fa-layer-group me-2"></i>Categories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"> <i class="fa-regular fa-address-card"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"><i class="bi bi-tag-fill me-1"></i> Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"><i class="bi bi-info-circle-fill me-1"></i> About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Blog Post Header -->
-    <div class="blog-post-header">
+    <header class="blog-post-header">
         <div class="container">
-            <h1 class="display-4">আমার গুনাহ্ ক্ষমা করে দাও</h1>
-            <p class="lead">    </p>
+            <h1>আল্লাহর ক্ষমার মহাসাগর: ফিরে আসার এখনই সময়</h1>
         </div>
-    </div>
+    </header>
 
     <!-- Blog Content -->
-    <div class="container py-5" style="font-family: Noto Serif Bengali;">
-        <div class="blog-content">
-            <img src="/Sub-blogpost/img-cata/Forgiveness for muslim person (1) - Copy.jpeg" class="img-fluid mb-4" alt="Tech Innovations">
+    <main class="container py-5">
+        <article class="blog-content">
+            <img src="/Sub-blogpost/img-cata/Forgiveness for muslim person (1) - Copy.jpeg" class="img-fluid" alt="ক্ষমা প্রার্থনারত ব্যক্তি">
             
             <div class="post-meta mb-4">
-                <span class="badge bg-primary"> তওবা</span>
-                <span class="ms-2"><i class="bi bi-calendar me-1"></i>February 4, 2025</span>
-                <span class="ms-2"><i class="bi bi-clock me-1"></i>5 min read</span>
+                <span class="badge">তওবা ও ইস্তেগফার</span>
+                <span class="ms-3"><i class="bi bi-calendar3 me-1"></i> ফেব্রুয়ারি ০৪, ২০২৫</span>
+                <span class="ms-3"><i class="bi bi-clock me-1"></i> ৫ মিনিট পঠন</span>
             </div>
 
-            <br>
-                <h2>আমার গুনাহ্ ক্ষমা করে দাও</h2>
-                <p class="lead">
-                   
-                    আল্লাহ তাআলা বলেন: 
-                    وَّ اسۡتَغۡفِرِ اللّٰهَ ؕ اِنَّ اللّٰهَ كَانَ غَفُوۡرًا رَّحِیۡمًا (١٠٦)
-                    আর তুমি আল্লাহর কাছে ক্ষমা চাও। নিশ্চয় আল্লাহ ক্ষমাশীল, পরম দয়ালু। (আন-নিসা;১০৬)
-                    ইস্তেগফার এর শাব্দিক অর্থ হলো ক্ষমা প্রার্থনা করা। অর্থাৎ বান্দা যখন গুনাহে লিপ্ত থাকে এবং তারপর সে যখন বুঝতে পারে যে সে অন্যায় করেছে তখন উক্ত গোনার কারণে লজ্জিত ও অনুতপ্ত হওয়া এবং সেই গুনাহর অভিশাপ থেকে এবং আযাব থেকে আল্লাহর কাছে ক্ষমা প্রার্থনা করা। কেননা আল্লাহ তাআলা ক্ষমাশীল এবং অসীম দয়ালু।
-                    
-                    আবূ হুরায়রাহ (রাঃ) থেকে বর্ণিত। নবী (সাল্লাল্লাহু ‘আলাইহি ওয়া সাল্লাম) বলেনঃ 
-                    
-                    তোমরা যদি পাপাচার করতে, এমনকি তোমাদের পাপ আকাশের সীমা পর্যন্ত পৌছে যেতো, অতঃপর তোমরা তওবা করতে, তাহলে আল্লাহ অবশ্যই তোমাদের তওবা কবুল করবেন। (সুনানে ইবনে মাজাহ, হাদিস নং ৪২৪৮)
-                    
-                    -গুনাহ করে ফেললে আল্লাহর কাছে ক্ষমা চাইলে আল্লাহ ক্ষমা করে দেন।
-                    
-                    আবূ হুরায়রা (রাঃ) বর্ণিত। তিনি বলেন, আমি নাবী সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম-কে এ কথা বলতে শুনেছি, এক বান্দা গুনাহ্ করল। তারপর সে বলল, হে আমার রব! আমি তো গুনাহ্ করে ফেলেছি। তাই আমার গুনাহ্ ক্ষমা করে দাও। তার প্রতিপালক বললেনঃ আমার বান্দা কি একথা জেনেছে যে, তার রয়েছে একজন রব, যিনি গুনাহ্  ক্ষমা করেন এবং এর কারণে শাস্তিও দেন। আমার বান্দাকে আমি মাফ করে দিলাম। তারপর সে আল্লাহর ইচ্ছে অনুযায়ী কিছুকাল অবস্থান করল এবং সে আবার গুনাহ্তে জড়িয়ে গেল। বান্দা আবার বলল, হে আমার প্রতিপালক! আমি তো আবার গুনাহ্ করে বসেছি। আমার এ গুনাহ্ তুমি মাফ করে দাও। তখন আল্লাহ্ বললেনঃ আমার বান্দা কি জেনেছে যে, তার আছে একজন রব যিনি গুনাহ্ ক্ষমা করেন এবং এর কারণে শাস্তিও দেন। এরপর সে বান্দা আল্লাহর ইচ্ছানুযায়ী কিছুকাল সে অবস্থায় থাকল। আবারও সে গুনাহ্তে জড়িয়ে গেল। সে বলল, হে আমার রবব! আমি তো আরো একটি গুনাহ্ করে ফেলেছি। আমার এ গুনাহ্ মাফ করে দাও। তখন আল্লাহ্ বললেনঃ আমার বান্দা কি জেনেছে যে, তার একজন রব আছেন, যিনি গুনাহ্ মাফ করেন এবং এর কারণে শাস্তিও দেন। আমি আমার এ বান্দাকে মাফ করে দিলাম। এরকম তিনবার বললেন। (সহিহ বুখারী, হাদিস নং ৭৫০৭) 
+            <p>
+                <span class="drop-cap">ই</span>স্তেগফার, অর্থাৎ আল্লাহর কাছে ক্ষমা প্রার্থনা করা, মুমিনের জীবনের এক অবিচ্ছেদ্য অংশ। মানুষ হিসেবে আমরা ভুল করি, গুনাহে লিপ্ত হই। কিন্তু আল্লাহর দয়ার দরজা কখনো বন্ধ হয় না। যখনই কোনো বান্দা তার ভুলের জন্য অনুতপ্ত হয়ে ফিরে আসে, আল্লাহ তাকে ক্ষমা করার জন্য প্রস্তুত থাকেন।
+            </p>
 
+            <div class="ayah-quote">
+                <p class="arabic-text">وَٱسْتَغْفِرِ ٱللَّهَ ۖ إِنَّ ٱللَّهَ كَانَ غَفُورًا رَّحِيمًا</p>
+                <p class="translation">"আর তুমি আল্লাহর কাছে ক্ষমা চাও। নিশ্চয় আল্লাহ ক্ষমাশীল, পরম দয়ালু।"</p>
+                <span class="reference">— সূরা আন-নিসা, আয়াত ১০৬</span>
+            </div>
+            
+            <h2>আল্লাহর ক্ষমার বিশালতা</h2>
+            <p>
+                গুনাহ যত বড়ই হোক না কেন, আল্লাহর রহমত তার চেয়েও অনেক বেশি প্রশস্ত। হতাশ হওয়া মুমিনের কাজ নয়। নবী (ﷺ) আমাদের শিখিয়েছেন, আন্তরিক তওবা পাহাড় পরিমাণ গুনাহকেও মুছে দিতে পারে।
+            </p>
+
+            <div class="hadith-quote">
+                <p>
+                    "তোমরা যদি পাপাচার করতে, এমনকি তোমাদের পাপ আকাশের সীমা পর্যন্ত পৌঁছে যেতো, অতঃপর তোমরা তওবা করতে, তাহলে আল্লাহ অবশ্যই তোমাদের তওবা কবুল করবেন।"
                 </p>
-                    
- <p></p>
+                <span class="source">— সুনানে ইবনে মাজাহ, হাদিস নং ৪২৪৮</span>
+            </div>
+            
+            <h2>বারবার গুনাহ ও আল্লাহর ক্ষমা</h2>
+            <p>
+                শয়তান প্রায়ই আমাদের মনে এই ওয়াসওয়াসা দেয় যে, "তুমি তো একই ভুল বারবার করছ, আল্লাহ কি তোমাকে ক্ষমা করবেন?" এই নিরাশার ফাঁদে পা না দিয়ে আল্লাহর রহমতের প্রতি বিশ্বাস রাখা অপরিহার্য। নিচের হাদিসটি এই বিষয়ে আমাদের জন্য এক বিরাট সুসংবাদ।
+            </p>
 
-                <h3></h3>
-                <ul>
-                   
-                </ul>
+             <div class="hadith-quote">
+                <p>
+                    নবী (ﷺ) বলেন, এক বান্দা গুনাহ্ করে বলল, "হে আমার রব! আমি তো গুনাহ্ করে ফেলেছি, আমার গুনাহ্ ক্ষমা করে দাও।" তার প্রতিপালক বললেন, "আমার বান্দা জেনেছে যে, তার একজন রব আছেন, যিনি গুনাহ্ ক্ষমা করেন এবং এর কারণে শাস্তিও দেন। আমি আমার বান্দাকে মাফ করে দিলাম।"
+                    <br><br>
+                    এরপর সে আবার গুনাহ্তে জড়িয়ে গেল এবং আবার বলল, "হে আমার প্রতিপালক! আমি তো আবার গুনাহ্ করে বসেছি, আমার এ গুনাহ্ তুমি মাফ করে দাও।" তখন আল্লাহ্ পুনরায় বললেন, "...আমি আমার এ বান্দাকে মাফ করে দিলাম।"
+                    <br><br>
+                    এই ঘটনা তৃতীয়বার ঘটার পরও আল্লাহ বললেন, "আমি আমার এ বান্দাকে মাফ করে দিলাম..."
+                </p>
+                <span class="source">— সহিহ বুখারী, হাদিস নং ৭৫০৭</span>
+            </div>
 
-                <p></p>
-
-                <blockquote class="blockquote bg-light p-3 my-4">
-                    </blockquote>
-
-                <h3></h3>
-                <p></p> </article>
+            <!-- Lessons Card -->
+            <div class="card lessons-card">
+              <div class="card-header">
+                মূল শিক্ষা
+              </div>
+              <ul class="list-group list-group-flush p-3">
+                  <li class="list-group-item">গুনাহ হয়ে গেলে হতাশ না হয়েทันที আল্লাহর কাছে ক্ষমা চাওয়া উচিত।</li>
+                  <li class="list-group-item">আল্লাহর ক্ষমার দরজা সর্বদা খোলা, এমনকি যদি একই ভুল বারবারও হয়।</li>
+                  <li class="list-group-item">আন্তরিক অনুশোচনা ও তওবা হলো ক্ষমা লাভের পূর্বশর্ত।</li>
+                  <li class="list-group-item">আল্লাহর রহমতের প্রতি সুধারণা রাখা ঈমানের একটি গুরুত্বপূর্ণ অঙ্গ।</li>
+              </ul>
+            </div>
 
             <!-- Author Section -->
-            <div class="author-section text-center mt-5">
+            <div class="author-section text-center">
                 <img src="/image/IMG-20241121-WA0009.jpg" class="rounded-circle mb-3" alt="Author" width="100" height="100">
                 <h4>লেখক: ফয়সাল সাকিব</h4>
-                <p class="text-muted"></p>
+                <p class="text-muted">ইসলামিক গবেষক</p>
             </div>
-        </div>
-    </div>
-
-    <!-- Related Posts -->
- <!--   <section class="container py-5 bg-light">
-        <h3 class="text-center mb-4">Related Posts</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Blockchain Revolution</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Future of Cloud Computing</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Quantum Computing</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
+        </article>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="text-white text-center py-4 mt-5">
         <div class="container">
-            <p class="mb-0">&copy; 2024 ARAF. All Rights Reserved.</p>
+            <p class="mb-0">© 2024 ARAF. All Rights Reserved.</p>
         </div>
     </footer>
 

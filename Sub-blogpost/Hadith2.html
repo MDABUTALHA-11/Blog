@@ -1,188 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <!-- Google Meta Data -->
-    <meta name="google-adsense-account" content="ca-pub-9116809033361281">
+    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বিশেষ আমলসমূহ
-    </title>
+    <meta name="google-adsense-account" content="ca-pub-9116809033361281">
+    <title>যে আমলগুলো কবরে ও হাশরে মুক্তি দেবে – এক আশ্চর্য স্বপ্ন</title>
+
     <!-- Bootstrap 5.3 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <!-- Font -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts for Bengali - Optimized for Readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700&family=Noto+Serif+Bengali:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Google Ads & Analytics -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RWPNQ8VPQF');
+    </script>
+
     <style>
+        :root {
+            --font-heading: 'Baloo Da 2', cursive;
+            --font-body: 'Noto Serif Bengali', serif;
+            --color-background: #fdfdfc;
+            --color-text: #3d3d3d;
+            --color-primary: #2e7d32; /* Deep, serene green for hope and paradise */
+            --color-card-bg: #ffffff;
+            --color-border: #e8f0e8;
+            --color-subtle-bg: #f8faf8;
+        }
 
         body {
-            background-color: #f8f9fa;
+            background-color: var(--color-background);
+            font-family: var(--font-body);
+            color: var(--color-text);
+            font-size: 18px;
+            line-height: 1.8;
         }
+
+        /* --- Navbar & Footer --- */
+        .navbar { background-color: rgba(255, 255, 255, 0.8) !important; backdrop-filter: blur(10px); border-bottom: 1px solid var(--color-border); }
+        .navbar-brand { font-family: var(--font-heading); font-weight: 700; }
+        footer { background-color: #2c2c2c; }
+
+        /* --- Blog Post Header --- */
         .blog-post-header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            padding: 4rem 0;
             text-align: center;
+            padding: 5rem 1rem;
+            background-color: var(--color-subtle-bg);
+            border-bottom: 1px solid var(--color-border);
         }
+        .blog-post-header h1 {
+            font-family: var(--font-heading);
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #2c2c2c;
+        }
+
+        /* --- Main Content Area --- */
         .blog-content {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 750px;
+            margin: -4rem auto 0 auto;
+            background-color: var(--color-card-bg);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.07);
+            position: relative; z-index: 10;
         }
-        .author-section {
-            border-top: 1px solid #e9ecef;
-            padding-top: 1rem;
-            margin-top: 2rem;
+        .blog-content img.img-fluid { border-radius: 8px; margin-bottom: 2rem; }
+        
+        /* --- Post Meta (Tags, Date) --- */
+        .post-meta { font-size: 0.9rem; color: #777; }
+        .post-meta .badge { background-color: var(--color-primary) !important; color: white; font-weight: 500; padding: 0.4em 0.8em; }
+
+        /* --- Typography & Theming --- */
+        .blog-content h2 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+        }
+        .drop-cap { float: left; font-family: var(--font-heading); font-size: 5rem; line-height: 0.8; font-weight: 700; margin-right: 1rem; margin-top: 0.5rem; color: var(--color-primary); }
+
+        /* --- STYLED LIST OF DEEDS --- */
+        .deed-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 2.5rem;
+        }
+        .deed-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2.5rem;
+        }
+        .deed-icon {
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin-right: 1.5rem;
+            min-width: 40px;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .deed-description .deed-title {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--color-text);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+        .deed-description p {
+            margin-bottom: 0;
+            font-size: 1.05rem;
+            color: #555;
+        }
+        
+        /* --- Blockquote for Conclusion --- */
+        blockquote {
+            font-style: italic;
+            border-left: 4px solid var(--color-primary);
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+            background-color: var(--color-subtle-bg);
+        }
+
+        /* --- Author Section --- */
+        .author-section { border-top: 1px solid var(--color-border); padding-top: 2rem; margin-top: 3rem; }
+        .author-section h4 { font-family: var(--font-heading); font-weight: 700; }
+        
+        @media (max-width: 768px) {
+            .blog-post-header h1 { font-size: 2.2rem; }
+            .blog-content { padding: 1.5rem; margin-top: -3rem; }
         }
     </style>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-<!--Google Ads-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281"
-crossorigin="anonymous"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RWPNQ8VPQF');
-</script>
-
-
 </head>
-<body style="font-family: Sour Gummy;" >
+<body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="70" height="70">ARAF <i class="bi bi-pencil-square me-2"></i>
+            <a class="navbar-brand" href="index.html">
+                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="50" height="50" style="margin-right: 10px;">ARAF
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/index.html"> <i class="fas fa-home me-2"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"><i class="fas fa-layer-group me-2"></i> Categories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html">  <i class="fa-regular fa-address-card"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html"><i class="bi bi-house-door-fill me-1"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Categorie.html"><i class="bi bi-tag-fill me-1"></i> Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"><i class="bi bi-info-circle-fill me-1"></i> About</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Blog Post Header -->
-    <div class="blog-post-header">
+    <header class="blog-post-header">
         <div class="container">
-            <h1 class="display-4">বিশেষ আমলসমূহ
-            </h1>
-            <p class="lead">    </p>
+            <h1>বিশেষ আমলসমূহ যা কবরে ও হাশরে মুক্তি দেবে</h1>
         </div>
-    </div>
+    </header>
 
     <!-- Blog Content -->
-    <div class="container py-5" style="font-family: Noto Serif Bengali;">
-        <div class="blog-content">
-            <img src="/Sub-blogpost/img-cata/Deed.jpg" class="img-fluid mb-4" alt="Tech Innovations">
+    <main class="container py-5">
+        <article class="blog-content">
+            <img src="/Sub-blogpost/img-cata/Deed.jpg" class="img-fluid" alt="নেক আমলের প্রতীক">
             
             <div class="post-meta mb-4">
-                <span class="badge bg-primary">হাদিস</span>
-                <span class="ms-2"><i class="bi bi-calendar me-1"></i>April 28, 2025</span>
-                <span class="ms-2"><i class="bi bi-clock me-1"></i>10 min read</span>
+                <span class="badge">হাদিস ও আমল</span>
+                <span class="ms-3"><i class="bi bi-calendar3 me-1"></i> এপ্রিল ২৮, ২০২৫</span>
+                <span class="ms-3"><i class="bi bi-clock me-1"></i> ৮ মিনিট পঠন</span>
             </div>
 
-            <br>
-                <h2>বিশেষ আমলসমূহ </h2>
-                
-             <p class="lead text-justify">     আব্দুল্লাহ হাকীম তিরমিযী তাহার "নাওয়াদিরুল উসূল' গ্রন্থে উল্লেখ করিয়াছেন, আমার পিতা....আব্দুর রহমান ইবনে সামুরাহ (রা) হইতে বর্ণনা করিয়াছেন, তিনি বলেন, একবার রাসূলুল্লাহ (সা)
+            <p>
+                <span class="drop-cap">আ</span>ব্দুর রহমান ইবনে সামুরাহ (রাঃ) থেকে বর্ণিত, একবার রাসূলুল্লাহ (ﷺ) মদীনার মসজিদে আমাদের কাছে এসে বললেন, "আমি গতরাতে এক আশ্চর্যজনক স্বপ্ন দেখেছি।" এরপর তিনি তাঁর উম্মতের বিভিন্ন ব্যক্তিকে কঠিন বিপদের মুহূর্তে তাদের নেক আমলগুলো কীভাবে ঢাল হয়ে রক্ষা করেছে, তার এক ঈমানদীপ্ত বিবরণ তুলে ধরেন।
+            </p>
 
-                আমাদের নিকট আগমন করিলেন, আমরা তখন মদীনার মসজিদে বসিয়াছিলাম। তখন তিনি বলিলেন, আমি গতরাত্রে একটি আশ্চার্যজনক ব্যাপার দেখিয়াছি, আমি দেখি কি, আমার উম্মতের এক ব্যক্তির নিকট তাহার রূহ কবজের জন্য মালাকুল মওত আসিয়াছে, তখন তাহার পিতা-মাতার প্রতি তাহার সদাচারণ আসিয়া উপস্থিত হইল এবং মালাকুল মওতকে ফিরাইয়া দিল। আমার উম্মতের আর এক ব্যক্তিকে দেখিতে 
-                
-                পাইলাম যে কবরের আযাব তাহাকে ঘিরিয়া রাখিয়াছে কিন্তু তাহার অজু আসিয়া তাহাকে উদ্ধার করিল। আর এক ব্যক্তিকে দেখিলাম, যে শয়তান তাহাকে ঘিরিয়া ফেলিয়াছে কিন্তু আল্লাহর যিকির আসিয়া তাহাকে মুক্তি দান করিল। আমার উম্মতের আর ব্যক্তিকে দেখিতে পাইলাম আযাবের ফিরিস্তা তাহাকে বেষ্টন করিয়া রাখিয়াছে কিন্তু তাহার সালাত আসিয়া তাহাকে তাহাদের হাত হইতে উদ্ধার করিল। আমার উম্মতের আর এক ব্যক্তিকে দেখিতে পাইলাম যে পিপাসায় তাহার জিহ্বা বাহির হইয়া আসিয়াছে যখনই সে হাউজের নিকট যায়, তাহাকে ফিরাইয়া দেওয়া হয় তখন তাহার সাওম আসিয়া তাহাকে তাহার পানি পান করাইল। আমার উম্মতের আর এক ব্যক্তিকে দেখিতে পাইলাম যে নবীগণ চক্র করিয়া বসিয়া আছেন এবং এই লোকটি যে চক্রের নিকট বসিতে চায় তাহারা তাহাকে বিতাড়িত করিয়া দেয় তখন তাহার জনাবতের গোসল আসিয়া তাহার হাত ধরিয়া তাহাকে আমার পার্শে বসাইয়া দিল। আমার উম্মতের এক ব্যক্তিকে দেখিতে পাইলাম যে তাহার সম্মুখে অন্ধকার তাহার পিছনে অন্ধকার, তাহার ডান দিকে অন্ধকার, তাহার বাম দিকে অন্ধকার, তাহার উপরে অন্ধকার তাহার নীচে অন্ধার, এবং সে অস্থির। এমন সময় তাহার হজ্জ ও উমরাহ আসিয়া তাহাকে অন্ধকার হইতে বাহির করিয়া তাহাকে নূর ও আলোর মধ্যে দাখিল করিয়া দিল। আমার উম্মতের এমন এক ব্যক্তিকেও দেখিলাম যে সে মু'মিনদের সহিত কথা বলিতেছে অথচ তাহারা তাহার সহিত কথা বলিতেছে না এমন সময়ে তাহার আত্মীয়তার সম্পর্ক আসিয়া তাহাদিগকে বলিল হে মু'মিন লোকেরা! তোমরা ইহার সহিত কথা বল অতঃপর তাহারা কথা বলিল। আমার উম্মতের এমন এক ব্যক্তিকেও দেখিতে পাইলাম তাহার মুখমন্ডল তাহার হাত দ্বারা আগুনের ফুলকী হইতে বাচাইতেছে এমন সময় তাহার দান-খয়রাত আসিয়া তাহার সম্মুখে আবরণ হইয়া দাঁড়াইল এবং তাহার মাথার উপরে ছায়া হইল। আমার উম্মতকে এমনও দেখিলাম যে তাহার চতুর্দিক হইতে আযাবের ফিরিস্তা তাহাকে ঘিরিয়া রাখিয়াছে। এমন সময় সৎ কাজের প্রতি আদেশ ও অসৎ কাজ হইতে নিষেধ আসিয়া তাহাদের হাত হইতে তাহাকে রক্ষা করিয়া রহমতের ফিরিশ্তাগণের মধ্যে দাখিল করিয়া দিল।</p>
-                 <p class="lead text-justify">
-                    আমার এক উম্মতকে এমনও দেখিলাম যে, তাহার উভয় হাঁটুদ্বয়ের মাঝে মাথা উপুড় করিয়া বসিয়া আছে এবং আল্লাহও তাহার মাঝে এক প্রতিবন্ধক রহিয়াছে এমন সময় তাহার সদ্ব্যবহার আসিয়া তাহার হাত ধরিয়া আল্লাহর নিকট পৌঁছায়া দিল। আর এক ব্যক্তিকে এমনও দেখিতে পাইলাম যে তাহার বাম দিক হইতে তাহার আমল নামা আসিতেছে এমন সময় আল্লাহর প্রতি তাহার ভয় আসিয়া তাহার আমলনামা তাহার ডান হাতে
-উঠাইয়া দিল। এক ব্যক্তিকে দেখিতে পাইলাম যে তাহার আমলের ওজন হালকা হইয়া গিয়াছে অতঃপর তাহার শিশু সন্তানরা আসিয়া তাহার আমলনামা ভারী করিয়া দিল।
+            <h2>যে আমলগুলো মুক্তির কারণ হবে</h2>
 
-আমার এক উম্মতকে দেখিলাম যে জাহান্নামের পাড়ে দাঁড়াইয়া আছে অতঃপর আল্লাহর ভয়ে তাহার কম্পন তাহাকে উদ্ধার করিল। আমার উম্মতের এক ব্যক্তিকে দেখিলাম যে তাহাকে জাহান্নামে নিক্ষেপ করিবার জন্য উপুড় করা হইয়াছে। এমন সময় আল্লাহর ভয়ে তাহার অশ্রু আসিয়া তাহাকে উদ্ধার করিয়া নিল। এক ব্যক্তিকে দেখিলাম সে পুলসিরাতের উপর দাঁড়াইয়া কাঁপিতেছে এমন সময় আল্লাহর প্রতি তাহার সুধারণা আসিলে তাহার কম্পন থামিয়া গেল এবং পুলসিরাত পার হইয়া গেল। আমার উম্মতের এক ব্যক্তিকে দেখিলাম যে সে পুলসিরাতের উপর একবার হামাগুড়ি খাইতেছে আবার কিছু সময় হুছট খাইয়া চলিতেছে এমন সময় আমার উপর তাহার দরূদ শরীফ পাঠ আসিয়া তাহাকে সোজা করিয়া দিল এবং পুলসিরাত অতিক্রম করিয়া চলিয়া গেল।
-                 </p>
-                 <p class="lead text-justify">
-                    
-                    আমার উম্মতের এমন এক ব্যক্তিকেও দেখিতে পাইলাম যে বেহেশতের দরজার নিকটবর্তী 'হইয়াছে অতঃপর দরজা বন্ধ করিয়া দেওয়া হইল এমন সময় "লা-ইলাহা ইল্লাল্লাহ এর শাহাদাত" আসিল এবং দরজা খুলিয়া গেল। এবং তাহাকে বেহেশতে দালিখ করিয়া দিল। ইমাম কুরতুবী হাদীসটি বর্ণনা করিয়া বলেন, ইহা একটি বিরাট হাদীস ইহার মধ্যে বিশেষ আমলসমূহ উল্লেখ করা হইয়াছে যাহাকে মানুষ বিশেষ বিশেষ বিপদ হইতে রক্ষা করিবে। তিনি তাহার "আত্তায়কিরাহ" নামক গ্রন্থে হাদীসটি বর্ণনা করিয়াছেন।  </p>
+            <ul class="deed-list">
+                <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-person-hearts"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">পিতা-মাতার প্রতি সদাচারণ</strong>
+                        <p>এক ব্যক্তির কাছে রূহ কবজের জন্য মালাকুল মওত উপস্থিত হলে তার পিতা-মাতার প্রতি সদ্ব্যবহার এসে ফেরেশতাকে ফিরিয়ে দিল।</p>
+                    </div>
+                </li>
+                <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-droplet-fill"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">অজু</strong>
+                        <p>এক ব্যক্তিকে কবরের আজাব ঘিরে ধরলে তার অজু এসে তাকে সেই কঠিন শাস্তি থেকে উদ্ধার করল।</p>
+                    </div>
+                </li>
+                <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-chat-heart-fill"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">আল্লাহর যিকির</strong>
+                        <p>এক ব্যক্তিকে শয়তান ঘিরে ফেললে আল্লাহর যিকির এসে তাকে শয়তানের কুমন্ত্রণা থেকে মুক্তি দিল।</p>
+                    </div>
+                </li>
+                 <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-person-raised-hand"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">সালাত (নামাজ)</strong>
+                        <p>এক ব্যক্তিকে আজাবের ফেরেশতারা পাকড়াও করলে তার সালাত এসে তাকে তাদের হাত থেকে রক্ষা করল।</p>
+                    </div>
+                </li>
+                <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-cup-straw"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">সাওম (রোজা)</strong>
+                        <p>এক ব্যক্তি পিপাসায় কাতর হয়ে হাউজের কাছে গেলে তাকে তাড়িয়ে দেওয়া হচ্ছিল, তখন তার রোজা এসে তাকে পানি পান করাল।</p>
+                    </div>
+                </li>
+                 <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-person-plus-fill"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">আত্মীয়তার সম্পর্ক</strong>
+                        <p>এক ব্যক্তি মু'মিনদের সাথে কথা বলতে চাইলেও তারা সাড়া দিচ্ছিল না, তখন তার আত্মীয়তার সুসম্পর্ক এসে মু'মিনদেরকে তার সাথে কথা বলতে অনুরোধ করল।</p>
+                    </div>
+                </li>
+                 <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-gift-fill"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">দান-সদকা</strong>
+                        <p>এক ব্যক্তি হাত দিয়ে আগুনের ফুলকি থেকে মুখ বাঁচানোর চেষ্টা করছিল, তখন তার দান-সদকা এসে তার সামনে ও মাথার উপরে ছায়া হয়ে দাঁড়াল।</p>
+                    </div>
+                </li>
+                <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-check-circle-fill"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">সৎ কাজের আদেশ ও অসৎ কাজে নিষেধ</strong>
+                        <p>এক ব্যক্তিকে আজাবের ফেরেশতারা ঘিরে ফেললে তার এই আমলটি এসে তাকে রক্ষা করে রহমতের ফেরেশতাদের কাছে পৌঁছে দিল।</p>
+                    </div>
+                </li>
+                <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-arrow-right-circle-fill"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">পুলসিরাত পার হওয়া</strong>
+                        <p>এক ব্যক্তি পুলসিরাতের উপর কাঁপতে কাঁপতে ও হোঁচট খেতে খেতে চলছিল, তখন আমার উপর তার পঠিত দরুদ শরীফ এসে তার হাত ধরে সোজা করে দিল এবং সে পুলসিরাত পার হয়ে গেল।</p>
+                    </div>
+                </li>
+                 <li class="deed-item">
+                    <div class="deed-icon"><i class="bi bi-key-fill"></i></div>
+                    <div class="deed-description">
+                        <strong class="deed-title">‘লা-ইলাহা ইল্লাল্লাহ’-এর সাক্ষ্য</strong>
+                        <p>এক ব্যক্তি জান্নাতের দরজার কাছে পৌঁছানোর পর দরজা বন্ধ হয়ে গেল, তখন ‘লা-ইলাহা ইল্লাল্লাহ’-এর সাক্ষ্য এসে দরজা খুলে দিল এবং তাকে জান্নাতে প্রবেশ করাল।</p>
+                    </div>
+                </li>
+            </ul>
 
- <br><p class="lead">তাফসীর ইবনে কাসীর</p>
-</p>
-                <h3></h3>
-                <ul>
-                   
-                </ul>
-
-                <p></p>
-
-                <blockquote class="blockquote bg-light p-3 my-4">
-                    </blockquote>
-
-                <h3></h3>
-                <p></p> </article>
+            <blockquote>
+                ইমাম কুরতুবী (রহঃ) এই হাদিসটি বর্ণনা করে বলেন, "ইহা একটি বিরাট হাদিস, যার মধ্যে সেই বিশেষ আমলসমূহ উল্লেখ করা হয়েছে, যা মানুষকে বিশেষ বিশেষ বিপদ থেকে রক্ষা করবে।"
+            </blockquote>
 
             <!-- Author Section -->
-            <div class="author-section text-center mt-5">
+            <div class="author-section text-center">
                 <img src="/image/image.png" class="rounded-circle mb-3" alt="Author" width="100" height="100">
-                <h4> লেখক:মোহাম্মদ আবু তালহা</h4>
-                <h5>উৎস: তাফসীর ইবনে কাসীর</h5>
-                <p class="text-muted"></p>
+                <h4>লেখক: মোহাম্মদ আবু তালহা</h4>
+                <p class="text-muted">উৎস: নাওয়াদিরুল উসূল (হাকিম তিরমিযী), তাফসীর ইবনে কাসীর</p>
             </div>
-        </div>
-    </div>
+        </article>
+    </main>
 
-    <!-- Related Posts -->
-  <!--  <section class="container py-5 bg-light">
-        <h3 class="text-center mb-4">Related Posts</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Blockchain Revolution</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Future of Cloud Computing</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="/api/placeholder/350/200" class="card-img-top" alt="Related Post">
-                    <div class="card-body">
-                        <h5 class="card-title">Quantum Computing</h5>
-                        <a href="#" class="btn btn-outline-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
+    <footer class="text-white text-center py-4 mt-5">
         <div class="container">
-            <p class="mb-0">&copy; 2024 ARAF. All Rights Reserved.</p>
+            <p class="mb-0">© 2024 ARAF. All Rights Reserved.</p>
         </div>
     </footer>
 

@@ -6,71 +6,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - ARAF</title>
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
-    <!--Google Ads-->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281"
-    crossorigin="anonymous"></script>
-
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Ads & Analytics -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9116809033361281" crossorigin="anonymous"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RWPNQ8VPQF"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-RWPNQ8VPQF');
     </script>
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
         :root {
             --primary-color: #6a11cb;
             --secondary-color: #2575fc;
-            --accent-color: #ff6b6b;
             --gradient-primary: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            --gradient-secondary: linear-gradient(135deg, #ff6b6b 0%, #ff9a9a 100%);
         }
 
         body {
             background-color: #f0f4f8;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Sour Gummy', sans-serif;
         }
 
+        /* --- Colorful Navigation Bar --- */
         .navbar {
             background: var(--gradient-primary) !important;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-
         .navbar-brand, .nav-link {
             color: white !important;
             transition: all 0.3s ease;
         }
-
-        .nav-link:hover {
+        .nav-link:hover, .nav-link.active {
             transform: scale(1.1);
-            color: #f0f0f0 !important;
+            text-shadow: 0 0 5px rgba(255,255,255,0.5);
         }
 
+        /* --- Main Content Section --- */
         .contact-section {
             padding: 80px 0;
-            background: linear-gradient(to right, #ffffff 0%, #f0f4f8 100%);
         }
 
-        .contact-card {
+        .content-card {
             border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
             border: none;
             overflow: hidden;
+            background: white;
+            transition: all 0.3s ease;
         }
-
-        .contact-card:hover {
+        .content-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
         }
 
+        /* --- FAQ Accordion Styling --- */
+        .accordion-button {
+            font-weight: 600;
+            color: #333;
+        }
+        .accordion-button:not(.collapsed) {
+            color: white;
+            background: var(--gradient-primary);
+            box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+        }
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(106, 17, 203, 0.25);
+        }
+        .accordion-body {
+            color: #555;
+            font-size: 1.1rem;
+        }
+        
+        /* --- Contact Details Styling --- */
         .contact-icon {
             width: 60px;
             height: 60px;
@@ -83,76 +102,45 @@
             color: white;
             font-size: 24px;
         }
-
-        .form-control {
-            border-radius: 10px;
-            padding: 12px 15px;
-            border: 1px solid #e0e0e0;
-        }
-
-        .form-control:focus {
-            box-shadow: 0 0 0 0.25rem rgba(106, 17, 203, 0.25);
-            border-color: var(--primary-color);
-        }
-
-        .submit-btn {
-            background: var(--gradient-primary);
-            border: none;
-            padding: 12px 30px;
-            border-radius: 10px;
-            color: white;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
+        
+        /* --- Map Section Styling --- */
         .map-container {
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
-        /* Updated Footer Style */
+        /* --- Footer Styling --- */
         .black-footer {
             background: #000000;
             color: white;
-            padding: 20px 0;
         }
-
-        .social-icon {
+        .social-icon-footer {
             width: 40px;
             height: 40px;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
             color: white;
             margin: 0 5px;
             transition: all 0.3s ease;
         }
-
-        .social-icon:hover {
+        .social-icon-footer:hover {
             background: white;
             color: var(--primary-color);
             transform: scale(1.1);
         }
     </style>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Baloo+Da+2:wght@400..800&family=Noto+Serif+Bengali:wght@100..900&family=Rubik+Wet+Paint&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body style="font-family: Sour Gummy;">
-    <!-- Colorful Navigation -->
+
+    <!-- Colorful Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/image/1732040398527.jpg" class="rounded" alt="" width="70" height="70">ARAF <i class="fas fa-gem me-2"></i>
+            <a class="navbar-brand fw-bold" href="/index.html">
+                <img src="/image/1732040398527.jpg" class="rounded me-2" alt="ARAF Logo" width="50" height="50">ARAF
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -160,7 +148,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/index.html"><i class="fas fa-home me-2"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"><i class="fa-regular fa-address-card"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Navber/Aboutus.html"><i class="far fa-address-card me-2"></i> About</a></li>
                     <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-envelope me-2"></i> Contact</a></li>
                 </ul>
             </div>
@@ -168,101 +156,84 @@
     </nav>
 
     <!-- Contact Section -->
-    <section class="contact-section" id="section">
+    <section class="contact-section">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-lg-8 text-center">
-                    <h2 class="display-5 text-primary mb-3">আমাদের সাথে যোগাযোগ করুন</h2>
-                    <p class="lead text-secondary">আপনার যে কোনো প্রশ্ন, পরামর্শ বা মতামত আমাদের সাথে শেয়ার করতে চাইলে নিচের ফর্মটি পূরণ করুন। আমরা দ্রুত আপনার সাথে যোগাযোগ করব।</p>
+                    <h2 class="display-5 fw-bold" style="color: var(--primary-color);">আমাদের সাথে যোগাযোগ করুন</h2>
+                    <p class="lead text-secondary">আপনার যেকোনো প্রশ্ন, পরামর্শ বা মতামত সম্পর্কে জানতে আমরা প্রস্তুত। যোগাযোগের পূর্বে নিচের প্রশ্নগুলো দেখে নিতে পারেন।</p>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="card contact-card h-100">
-                        <div class="card-body p-5">
-                            <form>
-                                <div class="mb-4">
-                                    <label for="name" class="form-label">আপনার নাম</label>
-                                    <input type="text" class="form-control" id="name" placeholder="আপনার পুরো নাম লিখুন">
+            <div class="row g-5">
+                <!-- FAQ Section Column -->
+                <div class="col-lg-7">
+                    <div class="content-card h-100 p-4 p-md-5">
+                        <h4 class="mb-4" style="color: var(--primary-color); font-weight: 600;">সাধারণ জিজ্ঞাসা (FAQ)</h4>
+                        <div class="accordion" id="faqAccordion">
+                            <!-- FAQ Item 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                        নতুন আর্টিকেলের জন্য বিষয় প্রস্তাব করব কিভাবে?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        আমরা সবসময় নতুন বিষয় নিয়ে লিখতে আগ্রহী। আপনার প্রস্তাবিত বিষয় আমাদের ইমেইলে (`mdabutalha01742@gmail.com`) পাঠাতে পারেন।
+                                    </div>
                                 </div>
-                                <div class="mb-4">
-                                    <label for="email" class="form-label">ইমেইল ঠিকানা</label>
-                                    <input type="email" class="form-control" id="email" placeholder="আপনার ইমেইল ঠিকানা লিখুন">
+                            </div>
+                            <!-- FAQ Item 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                        আমি কি আপনাদের কন্টেন্ট শেয়ার করতে পারি?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        হ্যাঁ, অবশ্যই। শিক্ষামূলক ও অ-বাণিজ্যিক উদ্দেশ্যে আমাদের ওয়েবসাইটের নাম উল্লেখ করে কন্টেন্ট শেয়ার করতে পারেন।
+                                    </div>
                                 </div>
-                                <div class="mb-4">
-                                    <label for="phone" class="form-label">ফোন নম্বর</label>
-                                    <input type="tel" class="form-control" id="phone" placeholder="আপনার ফোন নম্বর লিখুন">
+                            </div>
+                            <!-- FAQ Item 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                        কোনো আর্টিকেলে ভুল পেলে কী করব?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        তথ্যের নির্ভুলতা আমাদের কাছে সর্বোচ্চ অগ্রাধিকার পায়। কোনো ভুল চোখে পড়লে, অনুগ্রহ করে আর্টিকেলের লিঙ্ক সহ আমাদের ইমেইল করুন। আমরা দ্রুত সংশোধনের ব্যবস্থা নেব।
+                                    </div>
                                 </div>
-                                <div class="mb-4">
-                                    <label for="message" class="form-label">আপনার বার্তা</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="আপনার বার্তা এখানে লিখুন..."></textarea>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn submit-btn">বার্তা পাঠান</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-6">
-                    <div class="card contact-card h-100">
-                        <div class="card-body p-5">
-                            <h4 class="text-primary mb-4">আমাদের সাথে সরাসরি যোগাযোগ</h4>
-                            
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <div class="text-center">
-                                        <div class="contact-icon">
-                                            <i class="fas fa-map-marker-alt"></i>
-                                        </div>
-                                        <h5>ঠিকানা</h5>
-                                        <p class="text-secondary">হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (HSTU)<br>দিনাজপুর, বাংলাদেশ</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6 mb-4">
-                                    <div class="text-center">
-                                        <div class="contact-icon">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </div>
-                                        <h5>ফোন নম্বর</h5>
-                                        <p class="text-secondary">+880 1742-761220</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6 mb-4 mb-md-0">
-                                    <div class="text-center">
-                                        <div class="contact-icon">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <h5>ইমেইল</h5>
-                                        <p class="text-secondary">mdabutalha01742@gmail.com</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <div class="text-center">
-                                        <div class="contact-icon">
-                                            <i class="fas fa-clock"></i>
-                                        </div>
-                                        <h5>কর্মঘণ্টা</h5>
-                                        <p class="text-secondary">সকাল ৯টা - সন্ধ্যা ৬টা</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <hr class="my-4">
-                            
-                            <h5 class="text-primary mb-3">সামাজিক মাধ্যমে অনুসরণ করুন</h5>
-                            <div class="text-center">
-                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                            </div>
+                <!-- Contact Info Column -->
+                <div class="col-lg-5">
+                    <div class="content-card h-100 p-4 p-md-5">
+                        <h4 class="mb-5 text-center" style="color: var(--primary-color); font-weight: 600;">যোগাযোগের তথ্য</h4>
+                        <div class="text-center">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <h5>ঠিকানা</h5>
+                            <p class="text-muted">হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (HSTU)<br>দিনাজপুর, বাংলাদেশ</p>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                            <h5>ফোন</h5>
+                            <p class="text-muted">+880 1742-761220</p>
+                        </div>
+                        <hr class="my-4">
+                        <div class="text-center">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <h5>ইমেইল</h5>
+                            <p class="text-muted">mdabutalha01742@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -270,20 +241,14 @@
         </div>
     </section>
 
-    <!-- Map Section with HSTU -->
-    <section class="py-5 bg-light">
+    <!-- Map Section -->
+    <section class="py-5">
         <div class="container">
-            <div class="row justify-content-center mb-4">
-                <div class="col-lg-8 text-center">
-                    <h3 class="display-6 text-primary">আমাদের অবস্থান</h3>
-                    <p class="lead text-secondary">হাজী মোহাম্মদ দানেশ বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় (HSTU), দিনাজপুর</p>
-                </div>
-            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.556142110885!2d88.9808893150116!3d25.50114598375789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc8f5b7c5b7c5b%3A0x1c1c1c1c1c1c1c1c!2sHajee%20Mohammad%20Danesh%20Science%20and%20Technology%20University!5e0!3m2!1sen!2sbd!4v1620000000000!5m2!1sen!2sbd" 
-                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.8497645168853!2d88.6432656750372!3d25.50993098375253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb529b0221996d%3A0x1b5757754b5f48f3!2sHajee%20Mohammad%20Danesh%20Science%20and%20Technology%20University%2C%20Dinajpur!5e0!3m2!1sen!2sbd!4v1689771147571!5m2!1sen!2sbd" 
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -293,15 +258,16 @@
     <!-- Black Footer -->
     <footer class="black-footer text-center py-4">
         <div class="container">
-            <p class="mb-0">
-                © 2024 ARAF. সকল অধিকার সংরক্ষিত
-            </p>
+            <div class="mb-3">
+                <a href="#" class="social-icon-footer"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon-footer"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon-footer"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="mb-0">© 2024 ARAF. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

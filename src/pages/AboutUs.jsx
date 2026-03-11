@@ -3,9 +3,9 @@ import { CheckCircle } from 'lucide-react';
 
 const AboutUs = () => {
     const team = [
-        { name: "মোহাম্মদ আবু তালহা", role: "ফাউন্ডার", img: "/image/image.png" },
-        { name: "ফয়সাল সাকিব", role: "সহ-প্রতিষ্ঠাতা", img: "/image/IMG-20241121-WA0009.jpg" },
-        { name: "মোহাম্মদ রাজিবুল", role: "সহ-প্রতিষ্ঠাতা", img: "/Sub-blogpost/img-cata/1732204120966.jpg" },
+        { name: "মোহাম্মদ আবু তালহা", role: "ফাউন্ডার", img: "/Blog/image/image.png" },
+        { name: "ফয়সাল সাকিব", role: "সহ-প্রতিষ্ঠাতা", img: "/Blog/image/IMG-20241121-WA0009.jpg" },
+        { name: "মোহাম্মদ রাজিবুল", role: "সহ-প্রতিষ্ঠাতা", img: "/Blog/Sub-blogpost/img-cata/1732204120966.jpg" },
     ];
 
     return (
@@ -38,7 +38,7 @@ const AboutUs = () => {
                         </div>
                         <div className="col-lg-6">
                             <motion.img
-                                src="/image/Trees in jungle ,comic image (1).png"
+                                src="/Blog/image/Trees in jungle ,comic image (1).png"
                                 className="img-fluid rounded-5 shadow-lg"
                                 alt="About"
                                 whileHover={{ scale: 1.02 }}

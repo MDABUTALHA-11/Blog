@@ -51,7 +51,7 @@ const BlogPost = () => {
                         {post.title}
                     </motion.h1>
                     <motion.div
-                        className="d-flex justify-content-center gap-4 mt-4 text-dark opacity-75"
+                        className="d-flex justify-content-center gap-4 mt-4 text-white"
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.4 }}

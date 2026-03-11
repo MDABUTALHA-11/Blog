@@ -1,13 +1,13 @@
 /* Typography & Variables */
 :root {
-  --primary-color: #ff9f89; /* Pastel Coral */
-  --secondary-color: #b5d8c0; /* Pastel Mint */
-  --accent-color: #d4c4fb; /* Pastel Lavender */
-  --bg-soft: #fffbf2; /* Creamy White */
-  --text-dark: #2d3436; /* Slate Gray */
-  --text-muted: #636e72;
-  --glass-white: rgba(255, 255, 255, 0.7);
-  --shadow-pastel: 0 20px 40px rgba(181, 216, 192, 0.15);
+  --primary-color: #0F6B4F; /* Deep Emerald */
+  --secondary-color: #C9A227; /* Rich Gold */
+  --accent-color: #2C7BE5; /* Professional Blue */
+  --bg-soft: #F8F5F0; /* Soft Bone/Cream */
+  --text-dark: #1F2937; /* Dark Slate */
+  --text-muted: #4B5563;
+  --glass-white: rgba(255, 255, 255, 0.85);
+  --shadow-pastel: 0 20px 40px rgba(15, 107, 79, 0.12);
   --transition-smooth: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   --font-bangla: 'Hind Siliguri', sans-serif;
   --font-inter: 'Inter', sans-serif;
@@ -127,21 +127,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero */
 .new-hero {
   position: relative;
-  padding: 160px 0 100px;
-  background: radial-gradient(circle at top right, #fff5f2, var(--bg-soft));
+  padding: 180px 0 120px;
+  background: radial-gradient(circle at top right, #ffffff, var(--bg-soft));
   overflow: hidden;
 }
 
 .new-hero::before {
   content: '';
   position: absolute;
-  width: 600px;
-  height: 600px;
-  background: var(--secondary-color);
-  filter: blur(150px);
-  opacity: 0.15;
-  top: -200px;
-  right: -100px;
+  width: 800px;
+  height: 800px;
+  background: var(--primary-color);
+  filter: blur(180px);
+  opacity: 0.08;
+  top: -300px;
+  right: -150px;
 }
 
 .hero-badge {
@@ -206,21 +206,21 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Article Page */
 .article-header {
-  padding: 160px 0 100px;
-  background-color: var(--accent-color);
+  padding: 180px 0 120px;
+  background-color: var(--primary-color);
   background-size: cover;
   background-position: center;
-  color: var(--text-dark);
+  color: white;
   text-align: center;
   position: relative;
-  border-radius: 0 0 100px 100px;
+  border-radius: 0;
 }
 
 .article-header::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(rgba(212, 196, 251, 0.4), rgba(212, 196, 251, 0.8));
+  background: linear-gradient(rgba(15, 107, 79, 0.6), rgba(15, 107, 79, 0.9));
 }
 
 .article-container {

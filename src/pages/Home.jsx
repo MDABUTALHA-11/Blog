@@ -16,8 +16,8 @@ const Home = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                         >
-                            <span className="hero-badge shadow-sm d-inline-flex align-items-center gap-2">
-                                <Star size={16} fill="currentColor" /> আধুনিক ইসলামিক জীবনবোধ
+                            <span className="hero-badge shadow-sm d-inline-flex align-items-center gap-2" style={{ borderLeft: '4px solid var(--secondary-color)' }}>
+                                <Star size={16} fill="var(--secondary-color)" className="text-warning" /> আধুনিক ইসলামিক জীবনবোধ
                             </span>
                             <h1 className="display-1 fw-bold text-dark mb-4">
                                 শান্তির পথে আপনার <br /> যাত্রা শুরু হোক এখান থেকে
@@ -26,8 +26,8 @@ const Home = () => {
                                 শুদ্ধ জ্ঞান এবং নৈতিক শিক্ষার আলোয় আলোকিত হোক আপনার প্রতিদিন। ইসলামিক জীবন এবং দর্শনের গভীর বিশ্লেষণ।
                             </p>
                             <div className="d-flex gap-4 justify-content-center flex-wrap">
-                                <a href="#featured" className="btn btn-premium btn-lg">পড়া শুরু করুন</a>
-                                <Link to="/categories" className="btn btn-light btn-lg px-5 border-0 rounded- pill shadow-sm" style={{ backgroundColor: 'white', fontWeight: '800' }}>সব বিষয় দেখুন</Link>
+                                <a href="#featured" className="btn btn-premium btn-lg shadow-lg">পড়া শুরু করুন</a>
+                                <Link to="/categories" className="btn btn-outline-dark btn-lg px-5 border-2 rounded-pill fw-bold">সব বিষয় দেখুন</Link>
                             </div>
                         </motion.div>
                     </div>

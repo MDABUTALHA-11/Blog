@@ -5,10 +5,10 @@ import { ArrowRight, Book, Compass, Heart, Shield, Terminal } from 'lucide-react
 
 const Categories = () => {
     const categories = [
-        { title: "কুরআন", desc: "তফসীর, তিলাওয়াত এবং কুরআনিক শিক্ষার গভীর বিশ্লেষণ।", icon: <Book className="text-success" />, color: "rgba(12, 59, 46, 0.1)" },
-        { title: "হাদিস", desc: "রাসূলুল্লাহ (সা.)-এর পবিত্র বাণী এবং সুন্নাহর যথাযথ চর্চা।", icon: <Terminal className="text-success" />, color: "rgba(109, 151, 115, 0.1)" },
-        { title: "ইতিহাস", desc: "ইসলামের স্বর্ণযুগের ইতিহাস এবং মুসলিম বীরদের জীবনী।", icon: <Compass className="text-success" />, color: "rgba(255, 186, 0, 0.1)" },
-        { title: "জীবনবোধ", desc: "আধুনিক বিশ্বে ইসলামিক জীবনদর্শনের প্রয়োগ ও সমাধান।", icon: <Heart className="text-success" />, color: "rgba(12, 59, 46, 0.05)" },
+        { title: "কুরআন", desc: "তফসীর, তিলাওয়াত এবং কুরআনিক শিক্ষার গভীর বিশ্লেষণ।", icon: <Book className="text-dark" />, color: "#f8f9fa" },
+        { title: "হাদিস", desc: "রাসূলুল্লাহ (সা.)-এর পবিত্র বাণী এবং সুন্নাহর যথাযথ চর্চা।", icon: <Terminal className="text-dark" />, color: "#f8f9fa" },
+        { title: "ইতিহাস", desc: "ইসলামের স্বর্ণযুগের ইতিহাস এবং মুসলিম বীরদের জীবনী।", icon: <Compass className="text-dark" />, color: "#f8f9fa" },
+        { title: "জীবনবোধ", desc: "আধুনিক বিশ্বে ইসলামিক জীবনদর্শনের প্রয়োগ ও সমাধান।", icon: <Heart className="text-dark" />, color: "#f8f9fa" },
     ];
 
     return (
@@ -55,11 +55,14 @@ const Categories = () => {
                         {posts.map((post, i) => (
                             <div className="col-md-6 col-lg-4" key={i}>
                                 <article className="modern-card">
+                                    <div className="card-img-container">
+                                        <img src={post.image} alt={post.title} loading="lazy" />
+                                    </div>
                                     <div className="card-body p-4">
                                         <span className="card-category">{post.category}</span>
                                         <h3 className="h5 fw-bold mb-3">{post.title}</h3>
                                         <p className="text-muted small">{post.excerpt}</p>
-                                        <Link to={`/post/${post.slug}`} className="btn btn-link p-0 text-success fw-bold text-decoration-none d-flex align-items-center gap-2">
+                                        <Link to={`/post/${post.slug}`} className="btn btn-link p-0 text-dark fw-bold text-decoration-none d-flex align-items-center gap-2">
                                             পড়ুন <ArrowRight size={18} />
                                         </Link>
                                     </div>

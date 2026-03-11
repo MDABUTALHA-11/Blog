@@ -89,7 +89,7 @@ const Home = () => {
                                         <span className="card-category">{post.category}</span>
                                         <h3 className="h4 fw-bold mb-3">{post.title}</h3>
                                         <p className="text-muted small">{post.excerpt}</p>
-                                        <Link to={`/post/${post.slug}`} className="btn btn-link p-0 text-success fw-bold text-decoration-none d-inline-flex align-items-center gap-1">
+                                        <Link to={`/post/${post.slug}`} className="btn btn-link p-0 text-dark fw-bold text-decoration-none d-inline-flex align-items-center gap-1">
                                             বিস্তারিত <ChevronRight size={18} />
                                         </Link>
                                     </div>

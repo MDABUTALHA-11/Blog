@@ -174,10 +174,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   object-fit: cover;
   transition: all 0.8s cubic-bezier(0.2, 1, 0.3, 1);
+  filter: grayscale(100%);
 }
 
 .modern-card:hover .card-img-container img {
   transform: scale(1.1);
+  filter: grayscale(0%);
 }
 
 .card-category {
@@ -197,7 +199,9 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   text-align: center;
   position: relative;
-  border-radius: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .article-header::before {

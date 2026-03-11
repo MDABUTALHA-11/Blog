@@ -29,7 +29,14 @@ const BlogPost = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
         >
-            <header className="article-header">
+            <header
+                className="article-header"
+                style={{
+                    backgroundImage: `url('${post.image}')`,
+                    backgroundBlendMode: 'multiply',
+                    backgroundColor: 'rgba(0,0,0,0.85)'
+                }}
+            >
                 <div className="container">
                     <motion.span
                         className="hero-badge"

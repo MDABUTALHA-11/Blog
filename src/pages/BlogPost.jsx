@@ -76,7 +76,7 @@ const BlogPost = () => {
                     <hr className="my-5" />
 
                     <div className="author-card d-flex align-items-center gap-4 p-4 bg-light rounded-4">
-                        <img src="/image/image.png" className="rounded-circle" width="80" height="80" alt="Author" />
+                        <img src="/Blog/image/image.png" className="rounded-circle" width="80" height="80" alt="Author" />
                         <div>
                             <h4 className="fw-bold mb-1">{post.author}</h4>
                             <p className="text-muted mb-0">ইসলামিক গবেষক ও লেখক। তিনি দীর্ঘ সময় ধরে ইসলামিক ইতিহাস ও দর্শন নিয়ে কাজ করছেন।</p>

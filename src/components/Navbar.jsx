@@ -23,7 +23,7 @@ const Navbar = () => {
         <nav className={`navbar navbar-expand-lg fixed-top ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container">
                 <Link className="navbar-brand" to="/">
-                    <img src="/image/1732040398527.jpg" className="rounded-circle" width="45" height="45" alt="Logo" />
+                    <img src="/Blog/image/1732040398527.jpg" className="rounded-circle" width="45" height="45" alt="Logo" />
                     <span className="display-luxury fw-bold">iARAF</span>
                 </Link>
 

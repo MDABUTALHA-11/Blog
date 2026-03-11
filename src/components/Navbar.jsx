@@ -20,10 +20,10 @@ const Navbar = () => {
     }, [location]);
 
     return (
-        <nav className={`navbar navbar-expand-lg ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar navbar-expand-lg border-bottom border-2 border-dark ${isScrolled ? 'scrolled' : ''}`} style={{ top: '0', margin: '0', width: '100%', borderRadius: '0' }}>
             <div className="container">
                 <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
-                    <img src="/Blog/image/1732040398527.jpg" className="rounded-circle shadow-sm" width="45" height="45" alt="Logo" />
+                    <img src="/Blog/image/1732040398527.jpg" width="45" height="45" alt="Logo" className="border border-1 border-dark" />
                     <span className="fw-black text-dark" style={{ letterSpacing: '-1px', fontSize: '1.8rem' }}>iARAF</span>
                 </Link>
 

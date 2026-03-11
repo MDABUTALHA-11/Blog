@@ -26,8 +26,8 @@ const Home = () => {
                                 শুদ্ধ জ্ঞান এবং নৈতিক শিক্ষার আলোয় আলোকিত হোক আপনার প্রতিদিন। ইসলামিক জীবন এবং দর্শনের গভীর বিশ্লেষণ।
                             </p>
                             <div className="d-flex gap-4 justify-content-center flex-wrap">
-                                <a href="#featured" className="btn btn-premium btn-lg shadow-lg">পড়া শুরু করুন</a>
-                                <Link to="/categories" className="btn btn-outline-dark btn-lg px-5 border-2 rounded-pill fw-bold">সব বিষয় দেখুন</Link>
+                                <a href="#featured" className="btn btn-premium btn-lg">পড়া শুরু করুন</a>
+                                <Link to="/categories" className="btn btn-outline-dark btn-lg px-5 border-2 rounded-0 fw-bold">সব বিষয় দেখুন</Link>
                             </div>
                         </motion.div>
                     </div>
@@ -45,8 +45,8 @@ const Home = () => {
                         ].map((stat, i) => (
                             <div className="col-6 col-md-3" key={i}>
                                 <motion.div
-                                    className="p-3 p-md-4 rounded-4 hover-lift h-100"
-                                    whileHover={{ y: -5 }}
+                                    className="p-3 p-md-4 border border-2 border-dark h-100"
+                                    whileHover={{ y: -5, x: -5, boxShadow: '8px 8px 0px black' }}
                                 >
                                     <div className="mb-2 mb-md-3">{stat.icon}</div>
                                     <h3 className="h2 fw-bold number-font mb-1">{stat.val}</h3>
@@ -101,16 +101,16 @@ const Home = () => {
             </section>
 
             {/* Subscription Section */}
-            <section id="subscribe" className="py-5 bg-white">
+            <section id="subscribe" className="py-5 bg-white border-top border-2 border-dark">
                 <div className="container py-5">
-                    <div className="bg-primary-gradient p-5 rounded-5 shadow-lg overflow-hidden position-relative">
+                    <div className="bg-black p-5 border border-4 border-dark overflow-hidden position-relative">
                         <div className="row align-items-center">
                             <div className="col-lg-6 mb-4 mb-lg-0 text-white">
-                                <h2 className="display-5 fw-bold mb-3 display-luxury">আমাদের নতুন লেখাগুলো সরাসরি ইমেইলে পান</h2>
-                                <p className="text-white-50 fs-5">কোনো আপডেট মিস করবেন না। আমাদের নিউজলেটারে সাবস্ক্রাইব করে যুক্ত থাকুন শান্তির পথে।</p>
+                                <h2 className="display-5 fw-bold mb-3">আমাদের নতুন লেখাগুলো সরাসরি ইমেইলে পান</h2>
+                                <p className="text-white opacity-75 fs-5">কোনো আপডেট মিস করবেন না। আমাদের নিউজলেটারে সাবস্ক্রাইব করে যুক্ত থাকুন শান্তির পথে।</p>
                             </div>
                             <div className="col-lg-6">
-                                <form className="p-2 bg-white rounded-4 d-flex shadow-sm">
+                                <form className="p-2 bg-white d-flex border border-2 border-dark">
                                     <input
                                         type="email"
                                         className="form-control border-0 bg-transparent py-3"

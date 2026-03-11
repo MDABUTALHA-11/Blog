@@ -19,15 +19,15 @@ const Home = () => {
                             <span className="hero-badge shadow-sm d-inline-flex align-items-center gap-2">
                                 <Star size={16} fill="currentColor" /> আধুনিক ইসলামিক জীবনবোধ
                             </span>
-                            <h1 className="display-1 fw-bold text-white mb-4 display-luxury">
+                            <h1 className="display-1 fw-bold text-dark mb-4">
                                 শান্তির পথে আপনার <br /> যাত্রা শুরু হোক এখান থেকে
                             </h1>
-                            <p className="lead text-white-50 fs-4 mb-5 mx-auto" style={{ maxWidth: '700px' }}>
+                            <p className="lead text-muted fs-4 mb-5 mx-auto" style={{ maxWidth: '700px', lineHeight: '1.6' }}>
                                 শুদ্ধ জ্ঞান এবং নৈতিক শিক্ষার আলোয় আলোকিত হোক আপনার প্রতিদিন। ইসলামিক জীবন এবং দর্শনের গভীর বিশ্লেষণ।
                             </p>
-                            <div className="d-flex gap-3 justify-content-center flex-wrap">
-                                <a href="#featured" className="btn btn-premium btn-lg px-5">পড়া শুরু করুন</a>
-                                <Link to="/categories" className="btn btn-outline-light btn-lg px-5 border-2 rounded-4">সব বিষয় দেখুন</Link>
+                            <div className="d-flex gap-4 justify-content-center flex-wrap">
+                                <a href="#featured" className="btn btn-premium btn-lg">পড়া শুরু করুন</a>
+                                <Link to="/categories" className="btn btn-light btn-lg px-5 border-0 rounded- pill shadow-sm" style={{ backgroundColor: 'white', fontWeight: '800' }}>সব বিষয় দেখুন</Link>
                             </div>
                         </motion.div>
                     </div>
@@ -39,9 +39,9 @@ const Home = () => {
                 <div className="container">
                     <div className="row g-4 text-center justify-content-center">
                         {[
-                            { icon: <BookOpen className="text-success" />, val: "১০০+", label: "ইসলামিক প্রবন্ধ" },
-                            { icon: <Users className="text-success" />, val: "১০কে+", label: "সক্রিয় পাঠক" },
-                            { icon: <Heart className="text-success" />, val: "১০০%", label: "বিশুদ্ধ তথ্য" }
+                            { icon: <BookOpen size={32} className="text-dark" />, val: "১০০+", label: "ইসলামিক প্রবন্ধ" },
+                            { icon: <Users size={32} className="text-dark" />, val: "১০কে+", label: "সক্রিয় পাঠক" },
+                            { icon: <Heart size={32} className="text-dark" />, val: "১০০%", label: "বিশুদ্ধ তথ্য" }
                         ].map((stat, i) => (
                             <div className="col-6 col-md-3" key={i}>
                                 <motion.div
@@ -63,10 +63,10 @@ const Home = () => {
                 <div className="container py-lg-5">
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-5 gap-3">
                         <div>
-                            <span className="text-success fw-bold text-uppercase ls-2">সেরা লেখাগুলো</span>
-                            <h2 className="display-4 fw-bold display-luxury">জনপ্রিয় প্রবন্ধসমূহ</h2>
+                            <span className="fw-bold text-uppercase ls-2" style={{ color: 'var(--primary-color)' }}>সেরা লেখাগুলো</span>
+                            <h2 className="display-4 fw-bold">জনপ্রিয় প্রবন্ধসমূহ</h2>
                         </div>
-                        <Link to="/categories" className="btn btn-link text-success fw-bold text-decoration-none d-flex align-items-center gap-2">
+                        <Link to="/categories" className="btn btn-link text-dark fw-bold text-decoration-none d-flex align-items-center gap-2">
                             সবগুলো দেখুন <ArrowRight size={20} />
                         </Link>
                     </div>

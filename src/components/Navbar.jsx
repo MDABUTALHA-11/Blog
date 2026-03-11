@@ -20,11 +20,11 @@ const Navbar = () => {
     }, [location]);
 
     return (
-        <nav className={`navbar navbar-expand-lg fixed-top ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar navbar-expand-lg ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container">
-                <Link className="navbar-brand" to="/">
-                    <img src="/Blog/image/1732040398527.jpg" className="rounded-circle" width="45" height="45" alt="Logo" />
-                    <span className="display-luxury fw-bold">iARAF</span>
+                <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
+                    <img src="/Blog/image/1732040398527.jpg" className="rounded-circle shadow-sm" width="45" height="45" alt="Logo" />
+                    <span className="fw-black text-dark" style={{ letterSpacing: '-1px', fontSize: '1.8rem' }}>iARAF</span>
                 </Link>
 
                 <button

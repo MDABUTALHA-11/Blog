@@ -16,18 +16,18 @@ const Home = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
                         >
-                            <span className="hero-badge shadow-sm d-inline-flex align-items-center gap-2" style={{ borderLeft: '4px solid var(--secondary-color)' }}>
-                                <Star size={16} fill="var(--secondary-color)" className="text-warning" /> আধুনিক ইসলামিক জীবনবোধ
+                            <span className="hero-badge float-animation shadow-sm d-inline-flex align-items-center gap-2">
+                                <Star size={16} fill="var(--primary-color)" className="text-warning" /> আধুনিক ইসলামিক জীবনবোধ 🍃
                             </span>
-                            <h1 className="display-1 fw-bold text-dark mb-4">
+                            <h1 className="display-1 fw-bold mb-4" style={{ color: 'var(--primary-color)' }}>
                                 শান্তির পথে আপনার <br /> যাত্রা শুরু হোক এখান থেকে
                             </h1>
-                            <p className="lead text-muted fs-4 mb-5 mx-auto" style={{ maxWidth: '700px', lineHeight: '1.6' }}>
+                            <p className="lead text-muted fs-4 mb-5 mx-auto" style={{ maxWidth: '700px', lineHeight: '1.8' }}>
                                 শুদ্ধ জ্ঞান এবং নৈতিক শিক্ষার আলোয় আলোকিত হোক আপনার প্রতিদিন। ইসলামিক জীবন এবং দর্শনের গভীর বিশ্লেষণ।
                             </p>
                             <div className="d-flex gap-4 justify-content-center flex-wrap">
                                 <a href="#featured" className="btn btn-premium btn-lg">পড়া শুরু করুন</a>
-                                <Link to="/categories" className="btn btn-outline-dark btn-lg px-5 border-2 rounded-0 fw-bold">সব বিষয় দেখুন</Link>
+                                <Link to="/categories" className="btn btn-outline-success btn-lg px-5 rounded-pill fw-bold border-2">সব বিষয় দেখুন</Link>
                             </div>
                         </motion.div>
                     </div>
@@ -45,11 +45,12 @@ const Home = () => {
                         ].map((stat, i) => (
                             <div className="col-6 col-md-3" key={i}>
                                 <motion.div
-                                    className="p-3 p-md-4 border border-2 border-dark h-100"
-                                    whileHover={{ y: -5, x: -5, boxShadow: '8px 8px 0px black' }}
+                                    className="p-3 p-md-4 h-100 bg-white shadow-sm"
+                                    style={{ borderRadius: 'var(--radius-lg)', border: '1px solid rgba(0,0,0,0.03)' }}
+                                    whileHover={{ y: -10, boxShadow: 'var(--shadow-ghibli)' }}
                                 >
-                                    <div className="mb-2 mb-md-3">{stat.icon}</div>
-                                    <h3 className="h2 fw-bold number-font mb-1">{stat.val}</h3>
+                                    <div className="mb-2 mb-md-3 text-success p-3 rounded-circle d-inline-block" style={{ background: 'var(--bg-soft)' }}>{stat.icon}</div>
+                                    <h3 className="h2 fw-bold number-font mb-1 text-dark">{stat.val}</h3>
                                     <p className="text-muted small text-uppercase fw-bold ls-2 mb-0">{stat.label}</p>
                                 </motion.div>
                             </div>
@@ -101,23 +102,31 @@ const Home = () => {
             </section>
 
             {/* Subscription Section */}
-            <section id="subscribe" className="py-5 bg-white border-top border-2 border-dark">
+            <section id="subscribe" className="py-5 bg-white">
                 <div className="container py-5">
-                    <div className="bg-black p-5 border border-4 border-dark overflow-hidden position-relative">
+                    <div className="p-5 overflow-hidden position-relative shadow-lg" 
+                         style={{ 
+                             borderRadius: 'var(--radius-xl)', 
+                             background: 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))',
+                             border: '8px solid var(--bg-soft)'
+                         }}>
+                        <div className="ghibli-leaf float-animation" style={{ top: '10%', right: '5%', fontSize: '2rem' }}>🍃</div>
+                        <div className="ghibli-leaf float-animation" style={{ bottom: '15%', left: '3%', fontSize: '1.5rem', animationDelay: '1s' }}>🌿</div>
+                        
                         <div className="row align-items-center">
                             <div className="col-lg-6 mb-4 mb-lg-0 text-white">
                                 <h2 className="display-5 fw-bold mb-3">আমাদের নতুন লেখাগুলো সরাসরি ইমেইলে পান</h2>
                                 <p className="text-white opacity-75 fs-5">কোনো আপডেট মিস করবেন না। আমাদের নিউজলেটারে সাবস্ক্রাইব করে যুক্ত থাকুন শান্তির পথে।</p>
                             </div>
                             <div className="col-lg-6">
-                                <form className="p-2 bg-white d-flex border border-2 border-dark">
+                                <form className="p-2 bg-white d-flex rounded-pill shadow-sm">
                                     <input
                                         type="email"
-                                        className="form-control border-0 bg-transparent py-3"
+                                        className="form-control border-0 bg-transparent py-3 px-4"
                                         placeholder="আপনার ইমেইল ঠিকানা লিখুন"
                                         required
                                     />
-                                    <button type="submit" className="btn btn-premium px-4">যুক্ত হোন</button>
+                                    <button type="submit" className="btn btn-premium px-5 rounded-pill">যুক্ত হোন</button>
                                 </form>
                             </div>
                         </div>

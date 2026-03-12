@@ -32,14 +32,16 @@ const BlogPost = () => {
             <header
                 className="article-header"
                 style={{
-                    backgroundImage: `url('${post.image}')`,
-                    backgroundBlendMode: 'multiply',
-                    backgroundColor: 'rgba(0,0,0,0.85)'
+                    backgroundImage: `linear-gradient(rgba(56, 102, 65, 0.4), rgba(56, 102, 65, 0.6)), url('${post.image}')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
                 }}
             >
                 <div className="container">
+                    <div className="ghibli-leaf float-animation" style={{ top: '15%', right: '10%', fontSize: '2.5rem' }}>🍃</div>
                     <motion.span
-                        className="hero-badge"
+                        className="hero-badge float-animation"
+                        style={{ background: 'var(--accent-yellow)', color: 'var(--primary-color)' }}
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.2 }}
@@ -47,7 +49,8 @@ const BlogPost = () => {
                         {post.category}
                     </motion.span>
                     <motion.h1
-                        className="display-2 fw-bold"
+                        className="display-2 fw-bold text-white mb-4"
+                        style={{ textShadow: '0 4px 10px rgba(0,0,0,0.2)' }}
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.3 }}
@@ -55,13 +58,13 @@ const BlogPost = () => {
                         {post.title}
                     </motion.h1>
                     <motion.div
-                        className="d-flex justify-content-center gap-4 mt-4 text-white"
+                        className="d-flex justify-content-center gap-4 mt-4 text-white opacity-90"
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: 0.4 }}
                     >
-                        <span className="d-flex align-items-center gap-2 fw-bold"><Calendar size={18} /> {post.date}</span>
-                        <span className="d-flex align-items-center gap-2 fw-bold"><User size={18} /> {post.author}</span>
+                        <span className="d-flex align-items-center gap-2 fw-medium"><Calendar size={18} /> {post.date}</span>
+                        <span className="d-flex align-items-center gap-2 fw-medium"><User size={18} /> {post.author}</span>
                     </motion.div>
                 </div>
             </header>
@@ -79,11 +82,12 @@ const BlogPost = () => {
 
                     <hr className="my-5" />
 
-                    <div className="author-card d-flex align-items-center gap-4 p-4 border border-2 border-dark">
-                        <img src="/Blog/image/image.png" width="80" height="80" alt="Author" />
+                    <div className="author-card d-flex align-items-center gap-4 p-4 shadow-sm" 
+                         style={{ background: 'var(--bg-soft)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(56, 102, 65, 0.1)' }}>
+                        <img src="/Blog/image/image.png" width="80" height="80" alt="Author" className="rounded-circle" />
                         <div>
-                            <h4 className="fw-bold mb-1">{post.author}</h4>
-                            <p className="text-muted mb-0">ইসলামিক গবেষক ও লেখক। তিনি দীর্ঘ সময় ধরে ইসলামিক ইতিহাস ও দর্শন নিয়ে কাজ করছেন।</p>
+                            <h4 className="fw-bold mb-1" style={{ color: 'var(--primary-color)' }}>{post.author}</h4>
+                            <p className="text-muted mb-0 small">ইসলামিক গবেষক ও লেখক। তিনি দীর্ঘ সময় ধরে ইসলামিক ইতিহাস ও দর্শন নিয়ে কাজ করছেন।</p>
                         </div>
                     </div>
                 </article>

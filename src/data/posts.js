@@ -4,7 +4,7 @@ export const posts = [
         title: "খিজির (আ.) ও মুসা (আ.) এর কাহিনি",
         category: "ইসলামিক ইতিহাস",
         excerpt: "মুসা (আ.)-এর সেই স্মরণীয় সফর যেখানে তিনি জ্ঞানের সন্ধানে বেরিয়েছিলেন।",
-        image: "/Blog/image/Old boat in river around the jungle comic image.png",
+        image: "/Blog/image/ghibli/nature.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "মে ১৫, ২০২৪"
     },
@@ -13,7 +13,7 @@ export const posts = [
         title: "ইমামদের বিচক্ষণতা ও আধুনিক দর্শন",
         category: "বিচক্ষণতা",
         excerpt: "ইমাম আবু হানিফা (রহ.)-এর সেই ঐতিহাসিক বিতর্ক যা আজও নাস্তিক্যবাদের জবাব দিয়ে যায়।",
-        image: "/Blog/image/Trees in jungle ,comic image.png",
+        image: "/Blog/image/ghibli/study.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "জুন ০২, ২০২৪"
     },
@@ -76,7 +76,7 @@ export const posts = [
         title: "মেহমানদারীর সর্বোত্তম আদর্শ",
         category: "সীরাত ও আদর্শ",
         excerpt: "হযরত ইবরাহীম (আঃ) ছিলেন মেহমানদারীর এক উজ্জ্বল নক্ষত্র। তাঁর আতিথেয়তার কাহিনী আজও আমাদের অনুপ্রাণিত করে।",
-        image: "/Blog/image/Guest.png",
+        image: "/Blog/image/ghibli/village.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "মে ০৩, ২০২৫"
     },
@@ -112,7 +112,7 @@ export const posts = [
         title: "আল্লাহর ক্ষমা ও বান্দার তওবা",
         category: "ঈমান ও আমল",
         excerpt: "মানুষ হিসেবে আমরা প্রতিনিয়ত ভুল করি। কিন্তু আল্লাহর দয়ার দরজা সর্বদা খোলা।",
-        image: "/Blog/image/Trees in jungle ,comic image.png",
+        image: "/Blog/image/ghibli/nature.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "নভেম্বর ১০, ২০২৪"
     }

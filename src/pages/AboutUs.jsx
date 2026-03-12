@@ -11,9 +11,10 @@ const AboutUs = () => {
     return (
         <div className="about-page">
             <header className="new-hero d-flex align-items-center" style={{ padding: '150px 0 100px' }}>
-                <div className="container">
-                    <h1 className="display-2 fw-bold display-luxury">আমাদের সমন্ধে জানুন</h1>
-                    <p className="lead text-white-50">শুদ্ধ ইসলামিক জ্ঞানের প্রচার ও প্রসারে আমাদের অঙ্গীকার</p>
+                <div className="container text-center">
+                    <div className="ghibli-leaf float-animation" style={{ top: '10%', right: '5%', fontSize: '2rem' }}>🍃</div>
+                    <h1 className="display-2 fw-bold" style={{ color: 'var(--primary-color)' }}>আমাদের সমন্ধে জানুন</h1>
+                    <p className="lead text-muted fs-4">শুদ্ধ ইসলামিক জ্ঞানের প্রচার ও প্রসারে আমাদের অঙ্গীকার</p>
                 </div>
             </header>
 
@@ -37,12 +38,13 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div className="col-lg-6">
-                            <motion.img
-                                src="/Blog/image/Trees in jungle ,comic image (1).png"
-                                className="img-fluid rounded-5 shadow-lg"
-                                alt="About"
-                                whileHover={{ scale: 1.02 }}
-                            />
+                                <motion.img
+                                    src="/Blog/image/ghibli/study.png"
+                                    className="img-fluid shadow-lg"
+                                    style={{ borderRadius: 'var(--radius-xl)', border: '10px solid white' }}
+                                    alt="About"
+                                    whileHover={{ scale: 1.02, rotate: 1 }}
+                                />
                         </div>
                     </div>
                 </div>

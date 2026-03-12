@@ -5,9 +5,10 @@ const Privacy = () => {
     return (
         <div className="privacy-page">
             <header className="new-hero d-flex align-items-center" style={{ padding: '150px 0 100px' }}>
-                <div className="container">
-                    <h1 className="display-2 fw-bold display-luxury">গোপনীয়তা নীতি</h1>
-                    <p className="lead text-white-50">আপনার তথ্যের নিরাপত্তা ও গোপনীয়তা আমাদের কাছে অগ্রাধিকার</p>
+                <div className="container text-center">
+                    <div className="ghibli-leaf float-animation" style={{ top: '10%', right: '5%', fontSize: '2rem' }}>🌿</div>
+                    <h1 className="display-2 fw-bold" style={{ color: 'var(--primary-color)' }}>গোপনীয়তা নীতি</h1>
+                    <p className="lead text-muted fs-4">আপনার তথ্যের নিরাপত্তা ও গোপনীয়তা আমাদের কাছে অগ্রাধিকার</p>
                 </div>
             </header>
 

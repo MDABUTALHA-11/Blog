@@ -20,11 +20,18 @@ const Navbar = () => {
     }, [location]);
 
     return (
-        <nav className={`navbar navbar-expand-lg border-bottom border-2 border-dark ${isScrolled ? 'scrolled' : ''}`} style={{ top: '0', margin: '0', width: '100%', borderRadius: '0' }}>
+        <nav className={`navbar navbar-expand-lg ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container">
-                <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
-                    <img src="/Blog/image/1732040398527.jpg" width="45" height="45" alt="Logo" className="border border-1 border-dark" />
-                    <span className="fw-black text-dark" style={{ letterSpacing: '-1px', fontSize: '1.8rem' }}>iARAF</span>
+                <Link className="navbar-brand d-flex align-items-center gap-3" to="/">
+                    <img 
+                      src="/Blog/image/1732040398527.jpg" 
+                      width="55" 
+                      height="55" 
+                      alt="Logo" 
+                      className="rounded-circle shadow-sm"
+                      style={{ border: '3px solid var(--bg-soft)' }}
+                    />
+                    <span className="fw-bold text-dark" style={{ letterSpacing: '-0.5px', fontSize: '1.9rem', color: 'var(--primary-color)' }}>iARAF</span>
                 </Link>
 
                 <button

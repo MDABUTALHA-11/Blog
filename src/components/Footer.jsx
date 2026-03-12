@@ -8,20 +8,20 @@ const Footer = () => {
                 <div className="row g-5">
                     <div className="col-lg-5">
                         <div className="footer-brand mb-4">
-                            <span className="h2 fw-bold text-dark">iARAF</span>
+                            <span className="h2 fw-bold" style={{ color: 'var(--primary-color)' }}>iARAF</span>
                         </div>
                         <p className="text-muted fs-5 mb-4" style={{ maxWidth: '400px' }}>
-                            প্রতিটি মুহূর্ত আল্লাহর স্মরণে কাটুক। আমাদের লক্ষ্য শুদ্ধ জ্ঞান সবার মাঝে ছড়িয়ে দেওয়া।
+                            প্রতিটি মুহূর্ত আল্লাহর স্মরণে কাটুক। আমাদের লক্ষ্য শুদ্ধ জ্ঞান সবার মাঝে ছড়িয়ে দেওয়া। 🍃
                         </p>
                         <div className="d-flex gap-3">
-                            <a href="#" className="social-icon"><Facebook size={22} /></a>
-                            <a href="#" className="social-icon"><Instagram size={22} /></a>
-                            <a href="#" className="social-icon"><Youtube size={22} /></a>
+                            <a href="#" className="social-icon shadow-sm"><Facebook size={22} /></a>
+                            <a href="#" className="social-icon shadow-sm"><Instagram size={22} /></a>
+                            <a href="#" className="social-icon shadow-sm"><Youtube size={22} /></a>
                         </div>
                     </div>
 
                     <div className="col-md-4 col-lg-2 ms-lg-auto">
-                        <h4 className="fw-bold mb-4 text-dark">লিংক</h4>
+                        <h4 className="fw-bold mb-4" style={{ color: 'var(--primary-color)' }}>লিংক</h4>
                         <ul className="list-unstyled">
                             <li className="mb-2"><Link to="/" className="footer-link">হোম</Link></li>
                             <li className="mb-2"><Link to="/categories" className="footer-link">ক্যাটাগরি</Link></li>

@@ -66,21 +66,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navigation */
 .navbar {
-  padding: 1.5rem 0;
-  background: transparent;
   transition: var(--transition-smooth);
   z-index: 1000;
-  position: sticky;
-  top: 0;
-}
-
-.navbar.scrolled {
-  padding: 0.8rem 0;
-  background: var(--glass-white);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  box-shadow: var(--shadow-ghibli);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(56, 102, 65, 0.1);
 }
 
 .nav-link {

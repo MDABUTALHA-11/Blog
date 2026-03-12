@@ -3,24 +3,15 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Star } from 'lucide-react';
 
 const Navbar = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const location = useLocation();
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
 
     useEffect(() => {
         setIsMenuOpen(false);
     }, [location]);
 
     return (
-        <nav className={`navbar navbar-expand-lg ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className="navbar navbar-expand-lg fixed-top shadow-sm" style={{ background: 'var(--bg-soft)', padding: '1rem 0' }}>
             <div className="container">
                 <Link className="navbar-brand d-flex align-items-center gap-3" to="/">
                     <img 

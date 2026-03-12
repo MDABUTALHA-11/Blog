@@ -8,11 +8,13 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Privacy from './pages/Privacy';
 import ScrollToTop from './components/ScrollToTop';
+import WindAnimation from './components/WindAnimation';
 
 function App() {
   return (
     <Router basename="/Blog">
       <ScrollToTop />
+      <WindAnimation />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

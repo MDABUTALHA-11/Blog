@@ -84,7 +84,7 @@ const BlogPost = () => {
 
                     <div className="author-card d-flex align-items-center gap-4 p-4 shadow-sm" 
                          style={{ background: 'var(--bg-soft)', borderRadius: 'var(--radius-lg)', border: '1px solid rgba(56, 102, 65, 0.1)' }}>
-                        <img src="/Blog/image/image.png" width="80" height="80" alt="Author" className="rounded-circle" />
+                        <img src="/Blog/image/ghibli/abu_talha.png" width="80" height="80" alt="Author" className="rounded-circle" />
                         <div>
                             <h4 className="fw-bold mb-1" style={{ color: 'var(--primary-color)' }}>{post.author}</h4>
                             <p className="text-muted mb-0 small">ইসলামিক গবেষক ও লেখক। তিনি দীর্ঘ সময় ধরে ইসলামিক ইতিহাস ও দর্শন নিয়ে কাজ করছেন।</p>

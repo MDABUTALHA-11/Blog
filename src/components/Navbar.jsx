@@ -22,14 +22,14 @@ const Navbar = () => {
                       className="rounded-circle shadow-sm"
                       style={{ border: '3px solid var(--bg-soft)' }}
                     />
-                    <span className="fw-bold text-dark" style={{ letterSpacing: '-0.5px', fontSize: '1.9rem', color: 'var(--primary-color)' }}>iARAF</span>
+                    <span className="fw-bold text-dark" style={{ letterSpacing: '-0.5px', fontSize: '1.9rem', color: 'var(--accent-color)' }}>iARAF</span>
                 </Link>
 
                 <button
                     className="navbar-toggler d-lg-none border-0"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
-                    {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                    {isMenuOpen ? <X size={28} color="var(--text-dark)" /> : <Menu size={28} color="var(--text-dark)" />}
                 </button>
 
                 <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarMain">
@@ -44,7 +44,7 @@ const Navbar = () => {
                             <Link className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about">আমাদের সম্পর্কে</Link>
                         </li>
                         <li className="nav-item ms-lg-4 mt-3 mt-lg-0">
-                            <a href="/#subscribe" className="btn btn-premium d-flex align-items-center gap-2">
+                            <a href="/Blog/#subscribe" className="btn btn-premium d-flex align-items-center gap-2">
                                 <Star size={18} /> সাবস্ক্রাইব
                             </a>
                         </li>

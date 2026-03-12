@@ -3,9 +3,9 @@ import { CheckCircle } from 'lucide-react';
 
 const AboutUs = () => {
     const team = [
-        { name: "মোহাম্মদ আবু তালহা", role: "ফাউন্ডার", img: "/Blog/image/image.png" },
-        { name: "ফয়সাল সাকিব", role: "সহ-প্রতিষ্ঠাতা", img: "/Blog/image/IMG-20241121-WA0009.jpg" },
-        { name: "মোহাম্মদ রাজিবুল", role: "সহ-প্রতিষ্ঠাতা", img: "/Blog/Sub-blogpost/img-cata/1732204120966.jpg" },
+        { name: "মোহাম্মদ আবু তালহা", role: "ফাউন্ডার", img: "/Blog/image/ghibli/abu_talha.png" },
+        { name: "ফয়সাল সাকিব", role: "সহ-প্রতিষ্ঠাতা", img: "/Blog/image/ghibli/faisal_sakib.png" },
+        { name: "মোহাম্মদ রাজিবুল", role: "সহ-প্রতিষ্ঠাতা", img: "/Blog/image/ghibli/rajibul_islam.png" },
     ];
 
     return (
@@ -13,7 +13,7 @@ const AboutUs = () => {
             <header className="new-hero d-flex align-items-center" style={{ padding: '150px 0 100px' }}>
                 <div className="container text-center">
                     <div className="ghibli-leaf float-animation" style={{ top: '10%', right: '5%', fontSize: '2rem' }}>🍃</div>
-                    <h1 className="display-2 fw-bold" style={{ color: 'var(--primary-color)' }}>আমাদের সমন্ধে জানুন</h1>
+                    <h1 className="display-2 fw-bold">আমাদের সমন্ধে জানুন</h1>
                     <p className="lead text-muted fs-4">শুদ্ধ ইসলামিক জ্ঞানের প্রচার ও প্রসারে আমাদের অঙ্গীকার</p>
                 </div>
             </header>
@@ -41,7 +41,7 @@ const AboutUs = () => {
                                 <motion.img
                                     src="/Blog/image/ghibli/study.png"
                                     className="img-fluid shadow-lg"
-                                    style={{ borderRadius: 'var(--radius-xl)', border: '10px solid white' }}
+                                    style={{ borderRadius: 'var(--radius-xl)', border: '10px solid var(--primary-color)' }}
                                     alt="About"
                                     whileHover={{ scale: 1.02, rotate: 1 }}
                                 />

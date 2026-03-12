@@ -22,7 +22,7 @@ export const posts = [
         title: "হযরত ইউনুস (আঃ) এর দোয়া ও শিক্ষা",
         category: "কুরআনের দোয়া",
         excerpt: "বিপদের মুহূর্ত থেকে মুক্তির সেই কালজয়ী দোয়া এবং ধৈর্যের গভীর তাৎপর্য।",
-        image: "/Blog/image/dreamina-2025-07-04-3785-blue whale digital art image.jpeg",
+        image: "/Blog/image/ghibli/whale_sea.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "জুলাই ১০, ২০২৪"
     },
@@ -31,7 +31,7 @@ export const posts = [
         title: "সুরা আল-কাওসার",
         category: "কুরআন তাফসীর",
         excerpt: "সুরা আল-কাওসার কুরআনের ১০৮তম সূরা। এটি মক্কায় অবতীর্ণ তিন আয়াতের একটি সংক্ষিপ্ত কিন্তু গভীর অর্থবহ সূরা।",
-        image: "/Blog/Blog-Image/Flux_Dev_A_beautiful_Islamic_paradise_with_the_River_of_Kawtha_1 - Copy.jpg",
+        image: "/Blog/image/ghibli/paradise_river.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "অক্টোবর ২০, ২০২৪"
     },
@@ -40,7 +40,7 @@ export const posts = [
         title: "ইসলামের পাঁচটি স্তম্ভ",
         category: "ইসলামি বুনিয়াদ",
         excerpt: "ইসলাম একটি সুশৃঙ্খল ও পরিপূর্ণ জীবনব্যবস্থা, যা পাঁচটি মূল ভিত্তির উপর প্রতিষ্ঠিত।",
-        image: "/Blog/image/dreamina-2025-07-04-5048-Namaz prayer by a muslim man digital art....jpeg",
+        image: "/Blog/image/ghibli/islamic_pillars.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "নভেম্বর ২০, ২০২৪"
     },
@@ -49,7 +49,7 @@ export const posts = [
         title: "ইহসান কী?",
         category: "ঈমান ও আমল",
         excerpt: "ইহসান হলো ঈমান ও আমলের সেই সর্বোচ্চ স্তর, যেখানে বান্দা তার প্রতিটি কাজ আল্লাহর সন্তুষ্টির জন্য নিখুঁতভাবে করে।",
-        image: "/Blog/image/dreamina-2025-07-04-7443-A Muslim man behaves well with people, d....jpeg",
+        image: "/Blog/image/ghibli/kindness_scene.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "নভেম্বর ২২, ২০২৪"
     },
@@ -67,7 +67,7 @@ export const posts = [
         title: "জালাল উদ্দিন রুমি ও জ্ঞানী পাখি",
         category: "সুফি দর্শন ও গল্প",
         excerpt: "পারস্যের বিখ্যাত কবি জালাল উদ্দিন রুমি এবং একটি জ্ঞানী পাখিকে নিয়ে এই চমৎকার গল্প।",
-        image: "/Blog/image/dreamina-2025-07-31-6364-Islamic scholer rumi and parrot in a jun....jpeg",
+        image: "/Blog/image/ghibli/rumi_bird.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "জুন ১০, ২০২৫"
     },

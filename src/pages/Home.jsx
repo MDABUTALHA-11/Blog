@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { posts } from '../data/posts';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BookOpen, Users, Heart, Star, ChevronRight } from 'lucide-react';
+import ContactForm from '../components/ContactForm';
 
 const Home = () => {
     return (
@@ -19,7 +20,7 @@ const Home = () => {
                             <span className="hero-badge float-animation shadow-sm d-inline-flex align-items-center gap-2">
                                 <Star size={16} fill="var(--primary-color)" className="text-warning" /> আধুনিক ইসলামিক জীবনবোধ 🍃
                             </span>
-                            <h1 className="display-1 fw-bold mb-4" style={{ color: 'var(--primary-color)' }}>
+                            <h1 className="display-1 fw-bold mb-4">
                                 শান্তির পথে আপনার <br /> যাত্রা শুরু হোক এখান থেকে
                             </h1>
                             <p className="lead text-muted fs-4 mb-5 mx-auto" style={{ maxWidth: '700px', lineHeight: '1.8' }}>
@@ -35,7 +36,7 @@ const Home = () => {
             </header>
 
             {/* Stats Section */}
-            <section className="py-5 bg-white border-bottom">
+            <section className="py-5 border-bottom" style={{ background: 'rgba(255,255,255,0.02)' }}>
                 <div className="container">
                     <div className="row g-4 text-center justify-content-center">
                         {[
@@ -45,9 +46,14 @@ const Home = () => {
                         ].map((stat, i) => (
                             <div className="col-6 col-md-3" key={i}>
                                 <motion.div
-                                    className="p-3 p-md-4 h-100 bg-white shadow-sm"
-                                    style={{ borderRadius: 'var(--radius-lg)', border: '1px solid rgba(0,0,0,0.03)' }}
-                                    whileHover={{ y: -10, boxShadow: 'var(--shadow-ghibli)' }}
+                                    className="p-3 p-md-4 h-100 shadow-sm"
+                                    style={{ 
+                                        borderRadius: 'var(--radius-lg)', 
+                                        border: '1px solid rgba(255,255,255,0.05)',
+                                        background: 'var(--bg-accent)',
+                                        color: 'var(--text-dark)'
+                                    }}
+                                    whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(21, 255, 0, 0.1)' }}
                                 >
                                     <div className="mb-2 mb-md-3 text-success p-3 rounded-circle d-inline-block" style={{ background: 'var(--bg-soft)' }}>{stat.icon}</div>
                                     <h3 className="h2 fw-bold number-font mb-1 text-dark">{stat.val}</h3>
@@ -102,7 +108,7 @@ const Home = () => {
             </section>
 
             {/* Subscription Section */}
-            <section id="subscribe" className="py-5 bg-white">
+            <section id="subscribe" className="py-5">
                 <div className="container py-5">
                     <div className="p-5 overflow-hidden position-relative shadow-lg" 
                          style={{ 
@@ -114,20 +120,12 @@ const Home = () => {
                         <div className="ghibli-leaf float-animation" style={{ bottom: '15%', left: '3%', fontSize: '1.5rem', animationDelay: '1s' }}>🌿</div>
                         
                         <div className="row align-items-center">
-                            <div className="col-lg-6 mb-4 mb-lg-0 text-white">
+                            <div className="col-lg-5 mb-4 mb-lg-0 text-white">
                                 <h2 className="display-5 fw-bold mb-3">আমাদের নতুন লেখাগুলো সরাসরি ইমেইলে পান</h2>
                                 <p className="text-white opacity-75 fs-5">কোনো আপডেট মিস করবেন না। আমাদের নিউজলেটারে সাবস্ক্রাইব করে যুক্ত থাকুন শান্তির পথে।</p>
                             </div>
-                            <div className="col-lg-6">
-                                <form className="p-2 bg-white d-flex rounded-pill shadow-sm">
-                                    <input
-                                        type="email"
-                                        className="form-control border-0 bg-transparent py-3 px-4"
-                                        placeholder="আপনার ইমেইল ঠিকানা লিখুন"
-                                        required
-                                    />
-                                    <button type="submit" className="btn btn-premium px-5 rounded-pill">যুক্ত হোন</button>
-                                </form>
+                            <div className="col-lg-7">
+                                <ContactForm />
                             </div>
                         </div>
                     </div>

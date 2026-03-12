@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="row g-5">
                     <div className="col-lg-5">
                         <div className="footer-brand mb-4">
-                            <span className="h2 fw-bold" style={{ color: 'var(--primary-color)' }}>iARAF</span>
+                            <span className="h2 fw-bold" style={{ color: 'var(--accent-color)' }}>iARAF</span>
                         </div>
                         <p className="text-muted fs-5 mb-4" style={{ maxWidth: '400px' }}>
                             প্রতিটি মুহূর্ত আল্লাহর স্মরণে কাটুক। আমাদের লক্ষ্য শুদ্ধ জ্ঞান সবার মাঝে ছড়িয়ে দেওয়া। 🍃
@@ -21,7 +21,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-md-4 col-lg-2 ms-lg-auto">
-                        <h4 className="fw-bold mb-4" style={{ color: 'var(--primary-color)' }}>লিংক</h4>
+                        <h4 className="fw-bold mb-4" style={{ color: 'var(--accent-color)' }}>লিংক</h4>
                         <ul className="list-unstyled">
                             <li className="mb-2"><Link to="/" className="footer-link">হোম</Link></li>
                             <li className="mb-2"><Link to="/categories" className="footer-link">ক্যাটাগরি</Link></li>

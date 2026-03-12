@@ -13,7 +13,7 @@ const ContactUs = () => {
             <header className="new-hero d-flex align-items-center" style={{ padding: '150px 0 100px' }}>
                 <div className="container text-center">
                     <div className="ghibli-leaf float-animation" style={{ top: '10%', right: '5%', fontSize: '2rem' }}>🌿</div>
-                    <h1 className="display-2 fw-bold" style={{ color: 'var(--primary-color)' }}>যোগাযোগ করুন</h1>
+                    <h1 className="display-2 fw-bold">যোগাযোগ করুন</h1>
                     <p className="lead text-muted fs-4">আপনার যেকোনো জিজ্ঞাসা বা পরামর্শ আমাদের জানান</p>
                 </div>
             </header>

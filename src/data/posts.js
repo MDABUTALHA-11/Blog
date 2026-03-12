@@ -58,7 +58,7 @@ export const posts = [
         title: "চন্দ্রের গতি ও মহাজাগতিক বিস্ময়",
         category: "বিজ্ঞান ও কুরআন",
         excerpt: "চাঁদ আকাশে বিশৃঙ্খলভাবে ঘুরে বেড়ায় না, বরং তার চলাচল একটি সুনির্দিষ্ট পথে বিভক্ত।",
-        image: "/Blog/Sub-blogpost/img-cata/jimeng-2025-05-17-679-A circular diagram showing the 8 phases of the Moon, highlighting the full moo....jpeg",
+        image: "/Blog/image/ghibli/moon_cosmos.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "জুন ১৮, ২০২৫"
     },
@@ -85,7 +85,7 @@ export const posts = [
         title: "মৃত্যু থেকে কবর পর্যন্ত যাত্রা",
         category: "হাদিস ও পরকাল",
         excerpt: "রাসূলুল্লাহ (ﷺ) ইরশাদ করেন, যখন একজন দ্বীনদার ব্যক্তির রূহ কবজ করা হয়, তখন এক অভূতপূর্ব যাত্রা শুরু হয়।",
-        image: "/Blog/image/IMG-20241121-WA0009.jpg",
+        image: "/Blog/image/ghibli/spiritual_path.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "আগস্ট ০৫, ২০২৪"
     },
@@ -94,7 +94,7 @@ export const posts = [
         title: "রাসূলুল্লাহ (ﷺ)-এর বর্ণিত আমলের প্রভাব",
         category: "হাদিস ও নসিহত",
         excerpt: "রাসূলুল্লাহ (ﷺ) স্বপ্নে তাঁর উম্মতের বিভিন্ন নেক আমলের যে বিস্ময়কর প্রভাব দেখেছিলেন।",
-        image: "/Blog/image/image.png",
+        image: "/Blog/image/ghibli/deed_garden.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "সেপ্টেম্বর ১২, ২০২৪"
     },
@@ -103,7 +103,7 @@ export const posts = [
         title: "সুলায়মান (আঃ) ও রাণী বিলকিস",
         category: "নবী ও রাসূল",
         excerpt: "সুলায়মান (আঃ)-এর সেই অসাধারণ প্রজ্ঞা এবং বিলকিসের আত্মসমর্পণ কাহিনি।",
-        image: "/Blog/image/Trees in jungle ,comic image (1).png",
+        image: "/Blog/image/ghibli/sulaiman_palace.png",
         author: "মোহাম্মদ আবু তালহা",
         date: "অক্টোবর ১৫, ২০২৪"
     },
